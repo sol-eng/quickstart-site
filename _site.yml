@@ -1,0 +1,10 @@
+name: "quickstart-site"
+title: "RStudio Quickstart VM"
+description: |
+  RStudio Quickstart VM
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+output: radix::radix_article
