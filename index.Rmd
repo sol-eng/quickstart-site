@@ -1,10 +1,10 @@
 ---
 title: "RStudio Quickstart VM"
+site: radix::radix_website
 description: |
   Welcome to the RStudio Quickstart VM! \
   \
   Click on one of the links below to get started.
-site: radix::radix_website
 ---
 
 [RStudio Connect](rsconnect/)
