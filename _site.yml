@@ -8,10 +8,10 @@ navbar:
   right:
     - text: "Getting Started"
       href: index.html
-    - text: "User Guide"
-      href: user.html
-    - text: "Admin Resources"
-      href: admin.html
+    - text: "Tour"
+      href: tour.html
+    - text: "Resource Guide"
+      href: resource-guide.html
     - text: "Legal"
       href: legal.html
 output:
