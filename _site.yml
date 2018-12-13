@@ -4,7 +4,18 @@ description: |
   RStudio Quickstart VM
 output_dir: "_site"
 navbar:
+  title: "RStudio Professional Quickstart"
   right:
-    - text: "Home"
+    - text: "Getting Started"
       href: index.html
-output: radix::radix_article
+    - text: "User Guide"
+      href: user.html
+    - text: "Admin Resources"
+      href: admin.html
+    - text: "Legal"
+      href: legal.html
+output:
+  html_document:
+    theme: readable
+    highlight: textmate
+    css: css/rstudio.css
