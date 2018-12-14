@@ -1,20 +1,62 @@
----
-title: "Getting Started"
----
+<!--html_preserve-->
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<!--/html_preserve-->
 
-![](images/rstudio-logo.png "RStudio Logo")
+<!--html_preserve-->
+<div class="jumbotron">
+  <p><img src="images/rstudio-logo.png" width="150px"></p>
+  <h3>Welcome to the RStudio Professional Quickstart!</h3>
+  <p>The RStudio Professional Quickstart VM comes with RStudio Professional products pre-installed and pre-configured to make it easy for you try them out on your own machine.</p>
+  <p>
+  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="right" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
+  <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
+  </p>
+</div>
+<!--/html_preserve-->
 
-### Welcome to the RStudio Professional Quickstart!
+<!--html_preserve-->
+    <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>RStudio Server Pro</h4>
+      <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
+      <p><a class="btn btn-default" href="rstudio/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" role="button">More info &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+      <h4>RStudio Connect</h4>
+      <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
+      <p><a class="btn btn-default" href="rsconnect/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" role="button">More info &raquo;</a></p>
+   </div>
+    <div class="col-md-3">
+      <h4>RStudio Package Manager</h4>
+      <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
+      <p><a class="btn btn-default" href="rspm/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" role="button">More info &raquo;</a></p>
+    </div>
+  </div>
+</div>
+<hr>
+<!--/html_preserve-->
 
-The RStudio Professional Quickstart runs in a virtual machine and comes with RStudio Professional products pre-installed and pre-configured to make it easy for you try them out on your own machine.
+### Documentation
 
-### Products
+Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/), or from with the products in the Quickstart.
 
-[RStudio Connect](rsconnect/)
+### Sample Mail Server
+  
+There is a [sample email server](webmail/) available to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into this single mailbox. In an actual implementation, RStudio Connect would integrate securely with your email infrastructure to ensure that information remains private.
 
-[Webmail](webmail/)
+### Support
 
-### Terms of Use
+Support is available for the Quickstart via the [RStudio Community forums](https://community.rstudio.com/tags/c/r-admin/quickstart) in the R-Admins category for questions with the "Quickstart" tag. Please note that professional support is not available for the Quickstart.
+
+### Scope of Use
 
 The Quickstart is primarily intended as a demo environment and is **not** supported for use in any production capacity. If you'd like to install and use RStudio Professional in production on your own enterprise infrastructure, please contact sales@rstudio.com.
 
