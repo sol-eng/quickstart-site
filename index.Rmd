@@ -2,10 +2,20 @@
 title: "Getting Started"
 ---
 
-Welcome to the RStudio Professional Quickstart
+![](images/rstudio-logo.png "RStudio Logo")
 
-The RStudio Professional Quickstart is a Virtual Machine with RStudio Professional products installed and configured to simplify the illustration of business value. It is primarily intended as a conversation starter. It is _not_ supported for use in any production capacity. If business value is determined, then the Quickstart should be followed by a proof of concept or other more formal integration into enterprise infrastructure.
+### Welcome to the RStudio Professional Quickstart!
+
+The RStudio Professional Quickstart runs in a virtual machine and comes with RStudio Professional products pre-installed and pre-configured to make it easy for you try them out on your own machine.
+
+### Products
 
 [RStudio Connect](rsconnect/)
 
 [Webmail](webmail/)
+
+### Terms of Use
+
+The Quickstart is primarily intended as a demo environment and is **not** supported for use in any production capacity. If you'd like to install and use RStudio Professional in production on your own enterprise infrastructure, please contact sales@rstudio.com.
+
+
