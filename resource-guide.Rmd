@@ -1,0 +1,135 @@
+---
+title: "RStudio Connect Resource Guide"
+---
+
+<!--html_preserve-->
+<html>
+<head>
+<hr><br>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="well">
+          <p>This user guide is a curated collection of reference articles for the best practices around using RStudio Connect in a data science workflow.</p>
+          <h3>Why Use RStudio Connect?</h3>
+          <ul>
+            <li>
+              <a href="www.rstudio.com">What is a data product?</a>
+            </li>
+            <li>
+              <a href="www.rstudio.com">Why is communication important for data scientists?</a>
+            </li>
+            <li>
+              <a href="www.rstudio.com">How does a publishing platform enable communication?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <h4>RStudio Connect is a publishing platform for data products</h4>
+        
+        <p>Share Shiny applications, R Markdown reports, Plumber APIs, dashboards, plots, and more in one convenient place.<p>
+        
+        <p>This Quickstart instance contains sample content so that you can demonstrate and experience some of the most valuable features of RStudio Connect.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-6">
+        <h3 style="color:orange">Plan &amp; Integrate</h3>
+        <ul>
+          <li>
+            <a href="www.rstudio.com">Tips for planning your evaluation</a>
+          </li>
+          <li>
+            <a href="https://www.rstudio.com/wp-content/uploads/2018/06/RStudio_Connect_ITQA_180618.pdf">What IT needs to know</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Architecting the right workflow</a>
+          </li>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/connecting.html">Connecting from the RStudio IDE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h3 style="color:red">Create</h3>
+        <ul>
+          <li>
+            <a href="www.rstudio.com">Optimize data products for publishing</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Connect to data sources</a>
+          </li>
+          <li>
+            <a href="https://support.rstudio.com/hc/en-us/articles/360007981134-Persistent-Storage-on-RStudio-Connect">Understand persistent data storage</a>
+          </li>
+          <li>
+            <a href="https://support.rstudio.com/hc/en-us/articles/226871847-Process-management-in-RStudio-Connect">Understand process management and sandboxing</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6">
+        <h3 style="color:green">Publish</h3>
+        <ul>
+          <li>
+            <a href="https://support.rstudio.com/hc/en-us/articles/228270928-Push-button-publishing-to-RStudio-Connect">Developer-driven publishing</a>
+          </li>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/publishing.html#collaboration">Collaborative Publishing</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Programmatic publishing workflows</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h3 style="color:blue">Configure &amp; Leverage</h3>
+        <ul>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/content-metadata.html">Content Metadata</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Performance Tuning</a>
+          </li>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/r-markdown.html#r-markdown-schedule">Scheduling</a>
+          </li>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/shiny.html#shiny-application-usage">Usage Tracking</a>
+          </li>
+          <li>
+            <a href="https://support.rstudio.com/hc/en-us/articles/228449348-How-do-I-delete-a-document-on-RStudio-Connect-">Delete/Remove Content</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+
+
+    <div class="row">
+      <div class="well">
+        <h4>Manage &amp; Administer RStudio Connect</h4>
+        <ul>
+          <li>
+            <a href="http://docs.rstudio.com/connect/user/cookbook.html">Connect Server API Cookbook</a>
+          </li>
+          <li>
+            <a href="http://docs.rstudio.com/connect/admin/">RStudio Connect Admin Documentation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</body></html>
+<!--/html_preserve-->
