@@ -11,7 +11,7 @@
 
 
 
-<title>Getting Started</title>
+<title>index.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +22,9 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -185,16 +188,32 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="index.html">Getting Started</a>
+  <a href="index.html">
+    <span class="fa fa-handshake"></span>
+     
+    Getting Started
+  </a>
 </li>
 <li>
-  <a href="tour.html">Tour</a>
+  <a href="tour.html">
+    <span class="fa fa-compass"></span>
+     
+    Product Tour
+  </a>
 </li>
 <li>
-  <a href="resource-guide.html">Resource Guide</a>
+  <a href="resource-guide.html">
+    <span class="fa fa-book"></span>
+     
+    Resource Guide
+  </a>
 </li>
 <li>
-  <a href="legal.html">Legal</a>
+  <a href="legal.html">
+    <span class="fa fa-balance-scale"></span>
+     
+    Legal
+  </a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -205,16 +224,83 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Getting Started</h1>
 
 </div>
 
 
-<p>Welcome to the RStudio Professional Quickstart</p>
-<p>The RStudio Professional Quickstart is a Virtual Machine with RStudio Professional products installed and configured to simplify the illustration of business value. It is primarily intended as a conversation starter. It is <em>not</em> supported for use in any production capacity. If business value is determined, then the Quickstart should be followed by a proof of concept or other more formal integration into enterprise infrastructure.</p>
-<p><a href="rsconnect/">RStudio Connect</a></p>
-<p><a href="webmail/">Webmail</a></p>
 
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+<div class="jumbotron">
+  <p><img src="images/rstudio-logo.png" width="150px"></p>
+  <h3>Welcome to the RStudio Professional Quickstart!</h3>
+  <p>The RStudio Professional Quickstart VM includes evaluation versions of RStudio Professional products that are pre-installed and pre-configured to make it easy for you try them on your own machine.</p>
+  <p>
+  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
+  <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
+  </p>
+</div>
+
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>RStudio Server Pro</h4>
+      <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
+      <p><a class="btn btn-default" href="rstudio/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" role="button">More info &raquo;</a></p>
+    </div>
+    <div class="col-md-3">
+      <h4>RStudio Connect</h4>
+      <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
+      <p><a class="btn btn-default" href="rsconnect/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" role="button">More info &raquo;</a></p>
+   </div>
+    <div class="col-md-3">
+      <h4>RStudio Package Manager</h4>
+      <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
+      <p><a class="btn btn-default" href="packages/" role="button">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" role="button">More info &raquo;</a></p>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div id="additional-information" class="section level3">
+<h3>Additional Information</h3>
+<hr>
+<div id="purchase-rstudio-professional-products" class="section level4">
+<h4>Purchase RStudio Professional Products</h4>
+<p>For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
+</div>
+<div id="documentation" class="section level4">
+<h4>Documentation</h4>
+<p>Documentation for all RStudio products is available from <a href="http://docs.rstudio.com/">our website</a> or can be accessed within the products in the Quickstart.</p>
+</div>
+<div id="sample-mail-server" class="section level4">
+<h4>Sample Mail Server</h4>
+<p>A <a href="webmail/">sample mail server</a> is available within the Quickstart to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.</p>
+</div>
+<div id="support" class="section level4">
+<h4>Support</h4>
+<p>Support is available for the Quickstart via the <a href="https://community.rstudio.com/tags/c/r-admin/quickstart">RStudio Community forums</a> in the R-Admins category for questions with the “quickstart” tag. Please note that professional support is not available for the Quickstart.</p>
+</div>
+<div id="scope-of-use" class="section level4">
+<h4>Scope of Use</h4>
+<p>The Quickstart is primarily intended as a demo environment and is <strong>not</strong> supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
+</div>
+</div>
+
+<div id="footer">
+  <div class="container text-center">
+    <p class="text-muted credit">RStudio, Inc., 250 Northern Ave, Boston, MA 02210, 844-448-1212</p>
+  </div>
+</div>
 
 
 

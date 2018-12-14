@@ -2,4 +2,7 @@
 title: "Tour"
 ---
 
-TODO: Insert Excellent Tour
+1) Navigate to the [RStudio Connect interface](rsconnect/)
+2) Click the "Log In" link on the top right corner of the "Welcome to RStudio Connect" page
+3) Log in with the username `rstudio` and password `rstudio`
+4) On the 
