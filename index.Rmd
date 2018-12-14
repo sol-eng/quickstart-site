@@ -48,13 +48,17 @@ $(function () {
 
 <hr>
 
+#### Purchase RStudio Professional Products
+
+For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
+
 #### Documentation
 
 Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) or can be accessed within the products in the Quickstart.
 
 #### Sample Mail Server
   
-A [sample email server](webmail/) is available within the Quickstart to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
+A [sample mail server](webmail/) is available within the Quickstart to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
 
 #### Support
 
@@ -62,6 +66,6 @@ Support is available for the Quickstart via the [RStudio Community forums](https
 
 #### Scope of Use
 
-The Quickstart is primarily intended as a demo environment and is **not** supported for use in any production capacity. If you'd like to install and use RStudio Professional in production on your own enterprise infrastructure, please contact sales@rstudio.com.
+The Quickstart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
 
 
