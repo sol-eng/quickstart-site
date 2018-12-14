@@ -10,9 +10,9 @@ $(function () {
 <div class="jumbotron">
   <p><img src="images/rstudio-logo.png" width="150px"></p>
   <h3>Welcome to the RStudio Professional Quickstart!</h3>
-  <p>The RStudio Professional Quickstart VM comes with RStudio Professional products pre-installed and pre-configured to make it easy for you try them out on your own machine.</p>
+  <p>The RStudio Professional Quickstart VM includes evaluation versions of RStudio Professional products that are pre-installed and pre-configured to make it easy for you try them on your own machine.</p>
   <p>
-  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="right" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
+  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
   <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
   </p>
 </div>
@@ -36,7 +36,7 @@ $(function () {
     <div class="col-md-3">
       <h4>RStudio Package Manager</h4>
       <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
-      <p><a class="btn btn-default" href="rspm/" role="button">Log in &raquo;</a>
+      <p><a class="btn btn-default" href="packages/" role="button">Log in &raquo;</a>
       <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" role="button">More info &raquo;</a></p>
     </div>
   </div>
@@ -44,19 +44,23 @@ $(function () {
 <hr>
 <!--/html_preserve-->
 
-### Documentation
+### Additional Information
 
-Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/), or from with the products in the Quickstart.
+<hr>
 
-### Sample Mail Server
+#### Documentation
+
+Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) or can be accessed within the products in the Quickstart.
+
+#### Sample Mail Server
   
-There is a [sample email server](webmail/) available to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into this single mailbox. In an actual implementation, RStudio Connect would integrate securely with your email infrastructure to ensure that information remains private.
+A [sample email server](webmail/) is available within the Quickstart to demonstrate RStudio Connect’s capability for sending automated, customized emails. In the Quickstart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
 
-### Support
+#### Support
 
-Support is available for the Quickstart via the [RStudio Community forums](https://community.rstudio.com/tags/c/r-admin/quickstart) in the R-Admins category for questions with the "Quickstart" tag. Please note that professional support is not available for the Quickstart.
+Support is available for the Quickstart via the [RStudio Community forums](https://community.rstudio.com/tags/c/r-admin/quickstart) in the R-Admins category for questions with the "quickstart" tag. Please note that professional support is not available for the Quickstart.
 
-### Scope of Use
+#### Scope of Use
 
 The Quickstart is primarily intended as a demo environment and is **not** supported for use in any production capacity. If you'd like to install and use RStudio Professional in production on your own enterprise infrastructure, please contact sales@rstudio.com.
 
