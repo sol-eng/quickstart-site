@@ -1,5 +1,5 @@
 ---
-title: "Legal"
+title: "Legal Terms"
 ---
 
 ### Terms of use for this Quickstart Virtual Machine
