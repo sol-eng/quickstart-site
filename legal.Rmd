@@ -2,4 +2,24 @@
 title: "Legal"
 ---
 
-TODO: Insert VM Legal Copy
+# Terms of use for this Quickstart Virtual Machine
+
+RStudio’s proprietary software programs:
+
+* RStudio Server Pro 
+* RStudio Connect
+* RStudio Package Manager
+ 
+RStudio’s proprietary software programs are licensed pursuant to the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/).  By downloading, installing or otherwise using the RStudio professional products, you agree to the terms of the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/).  If you do not agree to the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/), do not download, install or use the RStudio professional products.  RStudio professional products are provided on a stand-alone basis and separate from the other software programs included on this Quickstart Virtual Machine.
+
+Open Source Software Programs source components:
+
+* [R](https://www.r-project.org/Licenses/)
+* [Ubuntu](https://www.ubuntu.com/licensing)
+* [Roundcube](https://roundcube.net/license/)
+ 
+Open Source Software Programs source components are included as separate programs on this Quickstart Virtual Machine as a convenience to the end user.  Open Source Software Programs source components are licensed pursuant to the to their respective licenses which can be obtained at the links set forth opposite the respective Open Source Software Program. Open Source Software Programs source components are provided on a stand-alone basis and separate from the other software programs RStudio’s proprietary software programs included on this Quickstart Virtual Machine.
+ 
+RStudio is not the licensor of R the Open Source Software Programs and assumes no liability or obligation with respect to the Open Source Software Programs open source components, which are provided “as is” and which you acknowledge you are using at your own risk.  Accordingly, RStudio expressly disclaims any and all representations and warranties, express, implied and statutory, including without limitation expressly disclaiming the implied warranties of title, noninfringement, fitness for a particular purpose, and merchantability. RStudio shall have no liability to you arising out of or related to the Open Source Software Programs or your use thereof and expressly disclaims any and all direct, indirect, consequential, exemplary, incidental, special and punitive damages arising out of or related to the Open Source Software Programs and your use of thereof open source components.
+ 
+
