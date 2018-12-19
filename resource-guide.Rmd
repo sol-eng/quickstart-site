@@ -57,8 +57,7 @@ title: "RStudio Connect Resource Guide"
             <a href="http://docs.rstudio.com/connect/user/connecting.html">Connecting from the RStudio IDE</a>
           </li>
         </ul>
-      </div>
-      <div class="col-sm-6">
+        
         <h3 style="color:red">Create</h3>
         <ul>
           <li>
@@ -74,10 +73,7 @@ title: "RStudio Connect Resource Guide"
             <a href="https://support.rstudio.com/hc/en-us/articles/226871847-Process-management-in-RStudio-Connect">Understand process management and sandboxing</a>
           </li>
         </ul>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-sm-6">
+        
         <h3 style="color:green">Publish</h3>
         <ul>
           <li>
@@ -87,15 +83,28 @@ title: "RStudio Connect Resource Guide"
             <a href="http://docs.rstudio.com/connect/user/publishing.html#collaboration">Collaborative Publishing</a>
           </li>
           <li>
+            <a href="www.rstudio.com">Publishing to multiple locations</a>
+          </li>
+          <li>
             <a href="www.rstudio.com">Programmatic publishing workflows</a>
           </li>
         </ul>
       </div>
+      
       <div class="col-sm-6">
-        <h3 style="color:blue">Configure &amp; Leverage</h3>
+      <h3 style="color:blue">Configure &amp; Leverage</h3>
         <ul>
           <li>
             <a href="http://docs.rstudio.com/connect/user/content-metadata.html">Content Metadata</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Setting Environment Variables</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Using API Keys</a>
+          </li>
+          <li>
+            <a href="www.rstudio.com">Content Visibility and Collaboration</a>
           </li>
           <li>
             <a href="www.rstudio.com">Performance Tuning</a>
@@ -111,14 +120,13 @@ title: "RStudio Connect Resource Guide"
           </li>
         </ul>
       </div>
-    </div>
   </div>
-    
-
-
+  
+  <br>
+  
     <div class="row">
       <div class="well">
-        <h4>Manage &amp; Administer RStudio Connect</h4>
+        <h3>Manage &amp; Administer RStudio Connect</h3>
         <ul>
           <li>
             <a href="http://docs.rstudio.com/connect/user/cookbook.html">Connect Server API Cookbook</a>
