@@ -1,12 +1,31 @@
 ---
-title: "Legal Terms"
+title: "Help / About"
 ---
 
-<div id="header" class="fluid-row">
-<h1>RStudio QuickStart Virtual Machine</h1>
-</div>
+### Support and Feedback
+
+Support and feedback related to the QuickStart should be sent via the [RStudio Community forums](https://community.rstudio.com/tags/c/r-admin/quickstart). Posts should be submitted to the `R Admins` category and tagged with the `quickstart` tag.
+
+Please note that professional support is not available for the QuickStart.
+
+### Intended Use
+
+The QuickStart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
+
+### Documentation
+
+Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) and can also be accessed within the products in the QuickStart.
+
+### Sample Webmail Server
+  
+A [sample webmail server](webmail/) is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
+
+In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
+
+<!-- Terms of Use from https://www.rstudio.com/about/quickstart/ -->
+
 <div id="terms-of-use-for-this-quickstart-virtual-machine" class="section level3">
-<h2>Terms of use</h2>
+<h3>Terms of use</h3>
 <a href="#pro">RStudio Professional Products</a> are licensed pursuant to the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>. By downloading, installing or otherwise using the <a href="#pro">RStudio Professional Products</a>, you agree to the terms of the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>. If you do not agree to the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>, do not download, install or use the <a href="#pro">RStudio Professional Products</a>. <a href="#pro">RStudio Professional Products</a> are provided on a stand-alone basis and separate from the other software programs included on this QuickStart Virtual Machine.
 
 <a href="#oss">Open Source Software Programs</a> are included as separate programs on this QuickStart Virtual Machine as a convenience to the end user. <a href="#oss">Open Source Software Programs</a> are licensed pursuant to their respective licenses which can be obtained by clicking the name of the <a href="#oss">Open Source Software Programs</a> set forth below. <a href="#oss">Open Source Software Programs</a> are provided on a stand-alone basis and separate from <a href="#pro">RStudio Professional Products</a> included on this QuickStart Virtual Machine.
@@ -82,4 +101,3 @@ RStudio is not the licensor of the <a href="#oss">Open Source Software Programs
 </li>
 </ul>
 </div>
-

@@ -18,13 +18,13 @@ First, we'll log in and view the data products that have been published to RStud
 
 ### Logging in
 
-Navigate to the [RStudio Connect interface](rsconnect/).
+Navigate to the <a href="rsconnect/" target="_blank">RStudio Connect interface</a>.
 
 ![](images/rstudio-connect-login.png)
 
 Click the `Log In` link on the top right corner of the `Welcome to RStudio Connect` page.
 
-Log in with the username `rstudio` and password `rstudio`.
+Log in with the account username `rstudio` and password `rstudio`, which has administrator priviledges.
 
 ### Exploring the landing page
 
@@ -91,7 +91,7 @@ Let's change some of the parameters and send a copy of the report via email.
 6) On the top right navigation bar, click the email icon.
 7) Click the `Send` button to send a copy of the report via email.
 
-Navigate to the [webmail interface](webmail/) in the Quickstart. You'l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.
+Navigate to the <a href="webmail/" target="_blank">webmail interface</a> in the QuickStart. You'l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.
 
 ![](images/stock-portfolio-shiny-application.png)
 
@@ -99,7 +99,7 @@ Note that you can also schedule reports to be saved or sent by email to a list o
 
 ### Publishing from RStudio IDE
 
-You can configure the RStudio IDE on your local machine with the capability to publish projects to the instance of RStudio Connect in the Quickstart. Once configured, you can use push-button publishing to deploy your own applications to RStudio Connect.
+You can configure the RStudio IDE on your local machine with the capability to publish projects to the instance of RStudio Connect in the QuickStart. Once configured, you can use push-button publishing to deploy your own applications to RStudio Connect.
 
 1) From the RStudio IDE on your local machine, create a new R Notebook and save the notebook to a file. You can also use your own sample project in the following steps.
 2) Click the RStudio Connect `Publish` button to prepare the project for publishing.
@@ -121,7 +121,7 @@ After a few moments, you'll be directed to the published version of your project
 
 The tasks in this section would be performed by an administrator user in RStudio Connect.
 
-### Viewing a list of users
+### Viewing registered users
 
 From the RStudio Connect landing page, click on the `People` item in the top navigation bar.
 
@@ -129,7 +129,7 @@ You'll see a list of all users who have registered accounts in RStudio Connect.
 
 You can click on a particular user to view a list of content published by that user, and you have the ability to edit fields or lock access to their user account.
 
-### Viewing metrics
+### Viewing usage metrics
 
 From the RStudio Connect landing page, click on the `Admin` item in the top navigation bar.
 
@@ -139,7 +139,7 @@ You'll see an administrator dashboard with information about the CPU and RAM usa
 
 You can change the range to view RStudio Connect activity in terms of recent hours, days, weeks, and more.
 
-### Adding content tags
+### Adding tags to content
 
 From the RStudio Connect landing page, click on the `Admin` item in the top navigation bar, then click the `Tags` item to view a list of tags that have been defined.
 
