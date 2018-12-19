@@ -126,15 +126,17 @@ title: "RStudio Connect Resource Guide"
   
     <div class="row">
       <div class="well">
-        <h3>Manage &amp; Administer RStudio Connect</h3>
-        <ul>
-          <li>
-            <a href="http://docs.rstudio.com/connect/user/cookbook.html">Connect Server API Cookbook</a>
-          </li>
-          <li>
-            <a href="http://docs.rstudio.com/connect/admin/">RStudio Connect Admin Documentation</a>
-          </li>
-        </ul>
+        <h3 align="center">Manage &amp; Administer RStudio Connect</h3>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6" style="text-align: center;">
+            <a class="btn btn-info" href="http://docs.rstudio.com/connect/admin/" role="button">RStudio Connect Admin Documentation</a>
+          </div>
+          <div class="col-sm-6" style="text-align: center;">
+            <a class="btn btn-info" href="http://docs.rstudio.com/connect/user/cookbook.html" role="button">Connect Server API Cookbook</a>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
