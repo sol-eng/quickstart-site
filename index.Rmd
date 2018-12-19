@@ -12,8 +12,8 @@ $(function () {
   <h3>Welcome to the RStudio Professional Quickstart!</h3>
   <p>The RStudio Professional Quickstart VM includes evaluation versions of RStudio Professional products that are pre-installed and pre-configured to make it easy for you try them on your own machine.</p>
   <p>
-  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
-  <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
+  <a class="btn btn-primary btn-lg" href="rsconnect/" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio" target="_blank">Log in to RStudio Connect &raquo;</a>
+  <a class="btn btn-primary btn-lg" href="tour.html" role="button" target="_blank">Take a Tour of RStudio Connect &raquo;</a>
   </p>
 </div>
 <!--/html_preserve-->
@@ -24,20 +24,20 @@ $(function () {
     <div class="col-md-3">
       <h4>RStudio Server Pro</h4>
       <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
-      <p><a class="btn btn-default" href="rstudio/" role="button">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" role="button">More info &raquo;</a></p>
+      <p><a class="btn btn-default" href="rstudio/" role="button" target="_blank">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" role="button" target="_blank">More info &raquo;</a></p>
     </div>
     <div class="col-md-3">
       <h4>RStudio Connect</h4>
       <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
-      <p><a class="btn btn-default" href="rsconnect/" role="button">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" role="button">More info &raquo;</a></p>
+      <p><a class="btn btn-default" href="rsconnect/" role="button" target="_blank">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" role="button" target="_blank">More info &raquo;</a></p>
    </div>
     <div class="col-md-3">
       <h4>RStudio Package Manager</h4>
       <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
-      <p><a class="btn btn-default" href="packages/" role="button">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" role="button">More info &raquo;</a></p>
+      <p><a class="btn btn-default" href="packages/" role="button" target="_blank">Log in &raquo;</a>
+      <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" role="button" target="_blank">More info &raquo;</a></p>
     </div>
   </div>
 </div>
