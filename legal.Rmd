@@ -2,24 +2,84 @@
 title: "Legal Terms"
 ---
 
-### Terms of use for this Quickstart Virtual Machine
+<div id="header" class="fluid-row">
+<h1>RStudio QuickStart Virtual Machine</h1>
+</div>
+<div id="terms-of-use-for-this-quickstart-virtual-machine" class="section level3">
+<h2>Terms of use</h2>
+<a href="#pro">RStudio Professional Products</a> are licensed pursuant to the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>. By downloading, installing or otherwise using the <a href="#pro">RStudio Professional Products</a>, you agree to the terms of the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>. If you do not agree to the <a href="https://www.rstudio.com/about/eula/">RStudio End User License Agreement</a>, do not download, install or use the <a href="#pro">RStudio Professional Products</a>. <a href="#pro">RStudio Professional Products</a> are provided on a stand-alone basis and separate from the other software programs included on this QuickStart Virtual Machine.
 
-*[RStudio Professional Products](#rstudio-professional-products) are licensed pursuant to the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/). By downloading, installing or otherwise using the [RStudio Professional Products](#rstudio-professional-products), you agree to the terms of the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/). If you do not agree to the [RStudio End User License Agreement](https://www.rstudio.com/about/eula/), do not download, install or use the [RStudio Professional Products](#rstudio-professional-products). [RStudio Professional Products](#rstudio-professional-products) are provided on a stand-alone basis and separate from the other software programs included on this Quickstart Virtual Machine.*
+<a href="#oss">Open Source Software Programs</a> are included as separate programs on this QuickStart Virtual Machine as a convenience to the end user. <a href="#oss">Open Source Software Programs</a> are licensed pursuant to their respective licenses which can be obtained by clicking the name of the <a href="#oss">Open Source Software Programs</a> set forth below. <a href="#oss">Open Source Software Programs</a> are provided on a stand-alone basis and separate from <a href="#pro">RStudio Professional Products</a> included on this QuickStart Virtual Machine.
 
-*[Open Source Software Programs](#open-source-software-programs) are included as separate programs on this Quickstart Virtual Machine as a convenience to the end user. [Open Source Software Programs](#open-source-software-programs) are licensed pursuant to their respective licenses which can be obtained by clicking the name of the [Open Source Software Programs](#open-source-software-programs) set forth below. [Open Source Software Programs](#open-source-software-programs) are provided on a stand-alone basis and separate from [RStudio Professional Products](#rstudio-professional-products) included on this Quickstart Virtual Machine.*
+RStudio is not the licensor of the <a href="#oss">Open Source Software Programs</a> and assumes no liability or obligation with respect to the <a href="#oss">Open Source Software Programs</a>, which are provided “as is” and which you acknowledge you are using at your own risk. Accordingly, RStudio expressly disclaims any and all representations and warranties, express, implied and statutory, including without limitation expressly disclaiming the implied warranties of title, noninfringement, fitness for a particular purpose, and merchantability. RStudio shall have no liability to you arising out of or related to the <a href="#oss">Open Source Software Programs</a> or your use thereof and expressly disclaims any and all direct, indirect, consequential, exemplary, incidental, special and punitive damages arising out of or related to the <a href="#oss">Open Source Software Programs</a> and your use of thereof.
 
-*RStudio is not the licensor of the [Open Source Software Programs](#open-source-software-programs) and assumes no liability or obligation with respect to the [Open Source Software Programs](#open-source-software-programs), which are provided “as is” and which you acknowledge you are using at your own risk. Accordingly, RStudio expressly disclaims any and all representations and warranties, express, implied and statutory, including without limitation expressly disclaiming the implied warranties of title, noninfringement, fitness for a particular purpose, and merchantability. RStudio shall have no liability to you arising out of or related to the [Open Source Software Programs](#open-source-software-programs) or your use thereof and expressly disclaims any and all direct, indirect, consequential, exemplary, incidental, special and punitive damages arising out of or related to the [Open Source Software Programs](#open-source-software-programs) and your use of thereof.*
-
-#### RStudio Professional Products
-
-* [RStudio Server Pro](https://www.rstudio.com/products/rstudio-server-pro/evaluation/)
-* [RStudio Connect](https://www.rstudio.com/products/connect/evaluation/)
-* [RStudio Package Manager](https://www.rstudio.com/products/package-manager/eval/)
-
-#### Open Source Software Programs
-
-* [R](https://www.r-project.org/Licenses/)
-* [Ubuntu](https://www.ubuntu.com/licensing)
-* [Roundcube](https://roundcube.net/license/)
- 
+</div>
+<div id="rstudio-professional-products" class="section level3">
+<h3><a name="pro"></a><span style="color: #404040">RStudio Professional Products</span></h3>
+<ul>
+ 	<li><a href="https://www.rstudio.com/products/rstudio-server-pro/evaluation/">RStudio Server Pro</a></li>
+ 	<li><a href="https://www.rstudio.com/products/connect/evaluation/">RStudio Connect</a></li>
+ 	<li><a href="https://www.rstudio.com/products/package-manager/eval/">RStudio Package Manager</a></li>
+</ul>
+</div>
+<div id="open-source-software-programs" class="section level3">
+<h3><a name="oss"></a><span style="color: #404040">Open Source Software Programs</span></h3>
+<ul>
+ 	<li><a href="https://www.r-project.org/Licenses/">R</a></li>
+ 	<li><a href="https://roundcube.net/license/">Roundcube</a></li>
+ 	<li><a href="https://yq.readthedocs.io/en/latest/#license">yq</a></li>
+ 	<li><a href="http://nginx.org/LICENSE">nginx</a></li>
+ 	<li><a href="https://www.ubuntu.com/licensing">Ubuntu</a> (and system libraries)
+<ul>
+ 	<li><small>build-essential</small></li>
+ 	<li><small>default-jdk</small></li>
+ 	<li><small>gdebi-core</small></li>
+ 	<li><small>gfortran</small></li>
+ 	<li><small>git</small></li>
+ 	<li><small>gnome-keyring</small></li>
+ 	<li><small>jags</small></li>
+ 	<li><small>jq</small></li>
+ 	<li><small>libatlas3-base</small></li>
+ 	<li><small>libboost-all-dev</small></li>
+ 	<li><small>libcairo2</small></li>
+ 	<li><small>libcairo2-dev</small></li>
+ 	<li><small>libcurl4-openssl-dev</small></li>
+ 	<li><small>libfftw3-dev</small></li>
+ 	<li><small>libgdal-dev</small></li>
+ 	<li><small>libgraphviz-dev</small></li>
+ 	<li><small>libgsl-dev</small></li>
+ 	<li><small>libmysqlclient-dev</small></li>
+ 	<li><small>libnetcdf-dev</small></li>
+ 	<li><small>libprocps-dev</small></li>
+ 	<li><small>libproj-dev</small></li>
+ 	<li><small>libprotoc-dev</small></li>
+ 	<li><small>libsecret-1-dev</small></li>
+ 	<li><small>libquantlib0-dev</small></li>
+ 	<li><small>libxml2-dev</small></li>
+ 	<li><small>libsasl2-dev</small></li>
+ 	<li><small>libxt-dev</small></li>
+ 	<li><small>libxt6</small></li>
+ 	<li><small>lsb-release</small></li>
+ 	<li><small>net-tools</small></li>
+ 	<li><small>odbc-postgresql</small></li>
+ 	<li><small>openssh-client</small></li>
+ 	<li><small>protobuf-compiler</small></li>
+ 	<li><small>python-pip</small></li>
+ 	<li><small>python-dev</small></li>
+ 	<li><small>python-virtualenv</small></li>
+ 	<li><small>sudo</small></li>
+ 	<li><small>tdsodbc</small></li>
+ 	<li><small>texinfo</small></li>
+ 	<li><small>texlive</small></li>
+ 	<li><small>texlive-bibtex-extra</small></li>
+ 	<li><small>texlive-fonts-extra</small></li>
+ 	<li><small>texlive-latex-extra</small></li>
+ 	<li><small>texlive-xetex</small></li>
+ 	<li><small>unixodbc</small></li>
+ 	<li><small>unixodbc-dev</small></li>
+ 	<li><small>wget</small></li>
+</ul>
+</li>
+</ul>
+</div>
 
