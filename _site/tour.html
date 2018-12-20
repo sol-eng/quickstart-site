@@ -25,9 +25,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -103,6 +102,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -117,7 +119,6 @@ body {
   padding-top: 71px;
   margin-top: -71px;
 }
-
 .section h2 {
   padding-top: 71px;
   margin-top: -71px;
@@ -137,6 +138,43 @@ body {
 .section h6 {
   padding-top: 71px;
   margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -158,18 +196,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -344,18 +441,32 @@ div.tocify {
 <p><img src="images/rstudio-connect-login.png" /></p>
 <p>Click the <code>Log In</code> link on the top right corner of the <code>Welcome to RStudio Connect</code> page.</p>
 <p>Log in with the username <code>rstudio</code> and password <code>rstudio</code>.</p>
+<p>Note: The <code>rstudio</code> user is has administrator privileges. There are three roles on RStudio Connect and, each has its own unique login:</p>
+<ul>
+<li><strong>Viewer</strong> can see and interact with content. Username and password: <code>viewer</code>.</li>
+<li><strong>Publisher</strong> all the rights of the viewers and can also create and manage content. Username and password: <code>publisher</code>.</li>
+<li><strong>Administrator</strong> all the rights of the publishers and can also manage the service. Username and password: <code>rstudio</code>.</li>
+</ul>
 </div>
 <div id="exploring-the-landing-page" class="section level3">
 <h3>Exploring the landing page</h3>
 <p>Once you are logged in to RStudio Connect, you’ll see a landing page with a list of all of the content that has been published:</p>
 <p><img src="images/rstudio-connect-landing-page.png" /></p>
 </div>
+<div id="content-types" class="section level3">
+<h3>Content types</h3>
+<p>The RStudio Connect QuickStart comes pre-populated with apps, reports, and API’s.</p>
+<ul>
+<li><strong>Shiny</strong>. Host, manage, and scale your Shiny applications.</li>
+<li><strong>R Markdown</strong>. Schedule and distribute your R Markdown documents reports.</li>
+<li><strong>Plumber API’s</strong>. Expose any R function as an API.</li>
+</ul>
 </div>
-<div id="user-workflows" class="section level2">
-<h2>User Workflows</h2>
-<p>The tasks in this section would be performed by a user in RStudio Connect.</p>
-<div id="working-with-shiny-apps" class="section level3">
-<h3>Working with Shiny apps</h3>
+</div>
+<div id="explore-content" class="section level2">
+<h2>Explore Content</h2>
+<div id="stocks-shiny-application" class="section level3">
+<h3>Stocks Shiny Application</h3>
 <p>Click on the published document called <code>Stock Portfolio Shiny Application</code>, which will open the published Shiny app in the content portion of the screen along with controls for the application on the right side of the screen.</p>
 <p><img src="images/stock-portfolio-shiny-application.png" /></p>
 <p>Explore the Shiny application by:</p>
@@ -366,8 +477,30 @@ div.tocify {
 <li>Changing the parameters on the left in terms of portfolio risk level, starting date, MAR, and window.</li>
 </ol>
 </div>
-<div id="adding-collaborators" class="section level3">
-<h3>Adding collaborators</h3>
+<div id="stocks-r-markdown-report" class="section level3">
+<h3>Stocks R Markdown Report</h3>
+<p>Describe the R Markdown report.</p>
+</div>
+<div id="stocks-plumber-api" class="section level3">
+<h3>Stocks Plumber API</h3>
+<p>From the RStudio Connect landing page, click on the published API called <code>Stock Information Plumber API</code>, which will open the published API and show the endpoints that are available. In this published API, there are two endpoints that can be queried.</p>
+<p>Let’s query the <code>/price</code> endpoint to get historical prices for a given ticker symbol.</p>
+<ol style="list-style-type: decimal">
+<li>Click the <code>/price</code> bar near the bottom of the screen to expand the details of the endpoint.</li>
+<li>Click the <code>Try it Out</code> button to show the fields for the inputs to the API endpoint.</li>
+<li>Enter <code>AAPL</code> in the <code>ticker</code> field.</li>
+<li>Click the execute button to submit a request to the API endpoint.</li>
+</ol>
+<p><img src="images/rstudio-connect-published-api.png" /></p>
+<p>The results of the query appear in the response body field, which shows the historical returned as a JSON object. This API could be queried by other published assets or consumed by systems external to RStudio Connect using API tokens.</p>
+</div>
+</div>
+<div id="user-exercises" class="section level2">
+<h2>User Exercises</h2>
+<p>RStudio Connect is powered by R, so it knows how to run all of your data products. Perform these tasks in RStudio Connect.</p>
+<div id="add-collaborators" class="section level3">
+<h3>Add collaborators</h3>
+<p>Open the stocks Shiny application.</p>
 <p>On the right side of the screen, you’ll see an <code>Access</code> pane that defines which types of users can access the published version of the Shiny app and who can make changes to the document.</p>
 <p>Let’s add a collaborator to this Shiny app.</p>
 <ol style="list-style-type: decimal">
@@ -377,21 +510,12 @@ div.tocify {
 <p><img src="images/rstudio-connect-collaborator.png" /></p>
 <p>Now, the <code>publisher</code> user has the ability to manage and update this application.</p>
 </div>
-<div id="querying-an-api-endpoint" class="section level3">
-<h3>Querying an API endpoint</h3>
-<p>From the RStudio Connect landing page, click on the published API called <code>Stock Information Plumber API</code>, which will open the published API and show the endpoints that are available. In this published API, there are two endpoints that can be queried.</p>
-<p>Let’s query the <code>/price</code> endpoint to get historical prices for a given ticker symbol.</p>
-<ol style="list-style-type: decimal">
-<li>Click the <code>/price</code> bar near the bottom of the screen to expand the details of the endpoint.</li>
-<li>Click the <code>Try it Out</code> button to show the fields for the inputs to the API endpoint.</li>
-<li>Enter <code>AAPL</code> in the <code>ticker</code> field.</li>
-<li>Click the execute button to submit a reuqest to the API endpoint.</li>
-</ol>
-<p><img src="images/rstudio-connect-published-api.png" /></p>
-<p>The results of the query appear in the response body field, which shows the historical returned as a JSON object. This API could be queried by other published assets or consumed by systems external to RStudio Connect using API tokens.</p>
+<div id="scale-your-shiny-app" class="section level3">
+<h3>Scale your Shiny app</h3>
 </div>
-<div id="sending-email-reports" class="section level3">
-<h3>Sending email reports</h3>
+<div id="email-your-reports" class="section level3">
+<h3>Email your reports</h3>
+<p>This QuickStart ships with an email client. Open the Stocks R Markdown Report.</p>
 <p>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Report</code>, which will open the published report. This parameterized document contains multiple inputs that can be varied, then the report can be re-run and the output can be saved as new versions of the report.</p>
 <p>Let’s change some of the parameters and send a copy of the report via email.</p>
 <ol style="list-style-type: decimal">
@@ -403,12 +527,29 @@ div.tocify {
 <li>On the top right navigation bar, click the email icon.</li>
 <li>Click the <code>Send</code> button to send a copy of the report via email.</li>
 </ol>
-<p>Navigate to the <a href="webmail/">webmail interface</a> in the Quickstart. You’l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.</p>
+<p>Navigate to the <a href="webmail/">webmail interface</a> in the Quickstart. You’ll see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.</p>
 <p><img src="images/stock-portfolio-shiny-application.png" /></p>
 <p>Note that you can also schedule reports to be saved or sent by email to a list of users on a recurring basis using the <code>Schedule</code> tab in the project settings.</p>
 </div>
-<div id="publishing-from-rstudio-ide" class="section level3">
-<h3>Publishing from RStudio IDE</h3>
+<div id="schedule-your-report" class="section level3">
+<h3>Schedule your report</h3>
+</div>
+</div>
+<div id="publishing" class="section level2">
+<h2>Publishing</h2>
+<p>(do we really want this section?)</p>
+<p>Use the RStudio IDE to build data products and publish them to RStudio Connect.</p>
+<div id="how-does-publishing-work" class="section level3">
+<h3>How does publishing work</h3>
+<p>Push button publishing is one way to publish. Here is how it works.</p>
+<ul>
+<li>Builds a manifest</li>
+<li>Ships it to RStudio Connect</li>
+<li>Recreates the environment</li>
+</ul>
+</div>
+<div id="try-it-out" class="section level3">
+<h3>Try it out</h3>
 <p>You can configure the RStudio IDE on your local machine with the capability to publish projects to the instance of RStudio Connect in the Quickstart. Once configured, you can use push-button publishing to deploy your own applications to RStudio Connect.</p>
 <ol style="list-style-type: decimal">
 <li>From the RStudio IDE on your local machine, create a new R Notebook and save the notebook to a file. You can also use your own sample project in the following steps.</li>
@@ -427,24 +568,24 @@ div.tocify {
 <p>After a few moments, you’ll be directed to the published version of your project on RStudio Connect.</p>
 </div>
 </div>
-<div id="administrator-workflows" class="section level2">
-<h2>Administrator Workflows</h2>
+<div id="administrator-exercises" class="section level2">
+<h2>Administrator Exercises</h2>
 <p>The tasks in this section would be performed by an administrator user in RStudio Connect.</p>
-<div id="viewing-a-list-of-users" class="section level3">
-<h3>Viewing a list of users</h3>
+<div id="manage-users" class="section level3">
+<h3>Manage users</h3>
 <p>From the RStudio Connect landing page, click on the <code>People</code> item in the top navigation bar.</p>
 <p>You’ll see a list of all users who have registered accounts in RStudio Connect.</p>
 <p>You can click on a particular user to view a list of content published by that user, and you have the ability to edit fields or lock access to their user account.</p>
 </div>
-<div id="viewing-metrics" class="section level3">
-<h3>Viewing metrics</h3>
+<div id="monitor-metrics" class="section level3">
+<h3>Monitor metrics</h3>
 <p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar.</p>
 <p>You’ll see an administrator dashboard with information about the CPU and RAM usage on RStudio Connect, the number of active users and Shiny connections, and a list of processes that are running alongside published content.</p>
 <p><img src="images/rstudio-connect-metrics.png" /></p>
 <p>You can change the range to view RStudio Connect activity in terms of recent hours, days, weeks, and more.</p>
 </div>
-<div id="adding-content-tags" class="section level3">
-<h3>Adding content tags</h3>
+<div id="add-tags" class="section level3">
+<h3>Add tags</h3>
 <p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar, then click the <code>Tags</code> item to view a list of tags that have been defined.</p>
 <ol style="list-style-type: decimal">
 <li>Add a new category by clicking the <code>New Category</code> button on the top right of the screen and entering a name for the category.</li>
@@ -454,13 +595,13 @@ div.tocify {
 <p>Tags can be selected by owners or collaborators on a per-project basis. Users can use these tags from the landing page to filter for certain projects.</p>
 <p>The tag schema can be customized in any way that maps to your organization’s needs.</p>
 </div>
-<div id="viewing-audit-logs" class="section level3">
-<h3>Viewing audit logs</h3>
+<div id="view-audit-logs" class="section level3">
+<h3>View audit logs</h3>
 <p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar, then click the <code>Audit Logs</code> item to view a history of the activity that has been performed on RStudio Connect.</p>
 <p><img src="images/rstudio-connect-audit-logs.png" /></p>
 </div>
-<div id="viewing-system-information" class="section level3">
-<h3>Viewing system information</h3>
+<div id="view-system-information" class="section level3">
+<h3>View system information</h3>
 <p>From the RStudio Connect landing page, click on the <code>Documentation</code> item in the top navigation bar. You can view a list of available R versions that have been configured with RStudio Connect.</p>
 <p><img src="images/rstudio-connect-about.png" /></p>
 <p>Click on the <code>Server API Reference</code> link to view documentation related to various APIs that can be used to programmatically obtain audit logs, create published projects, gather statistics for published apps, and more.</p>
