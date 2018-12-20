@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Product Tour</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/rstudio.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">RStudio QuickStart</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-handshake"></span>
+     
+    Getting Started
+  </a>
+</li>
+<li>
+  <a href="tour.html">
+    <span class="fa fa-compass"></span>
+     
+    Product Tour
+  </a>
+</li>
+<li>
+  <a href="resource-guide.html">
+    <span class="fa fa-book"></span>
+     
+    Resource Guide
+  </a>
+</li>
+<li>
+  <a href="help.html">
+    <span class="fa fa-question-circle"></span>
+     
+    Help / About
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Product Tour</h1>
+
+</div>
+
+
+<p>In the following sections, we’ll explore the full functionality of RStudio Connect.</p>
+<p>You can follow through the tasks in sequential order, starting with user tasks and continuing to administrator tasks. Or, you can jump directly to a task and perform the steps described in that section.</p>
+<div id="getting-started" class="section level2">
+<h2>Getting Started</h2>
+<p>The RStudio QuickStart is pre-populated with apps, reports, and APIs that have been published.</p>
+<ul>
+<li><strong>Shiny Apps</strong>. Host, manage, and scale your Shiny applications.</li>
+<li><strong>R Markdown Documents</strong>. Schedule and distribute your R Markdown documents and reports.</li>
+<li><strong>Plumber APIs</strong>. Expose any R function as an API.</li>
+</ul>
+<div id="logging-in" class="section level3">
+<h3>Logging in</h3>
+<p>First, we’ll log in and view the data products that have been published to RStudio Connect.</p>
+<p>Navigate to the <a href="rsconnect/" target="_blank">RStudio Connect interface</a>.</p>
+<p><img src="images/rstudio-connect-login.png" /></p>
+<p>Click the <code>Log In</code> link on the top right corner of the <code>Welcome to RStudio Connect</code> page.</p>
+<p>Log in with the account username <code>rstudio</code> and password <code>rstudio</code>, which has administrator priviledges.</p>
+</div>
+<div id="exploring-the-landing-page" class="section level3">
+<h3>Exploring the landing page</h3>
+<p>Once you are logged in to RStudio Connect, you’ll see a landing page with a list of all of the content that has been published:</p>
+<p><img src="images/rstudio-connect-landing-page.png" /></p>
+</div>
+<div id="default-accounts-and-roles" class="section level3">
+<h3>Default accounts and roles</h3>
+<p>The RStudio QuickStart is pre-populated with multiple users, each with a different role and credentials:</p>
+<ul>
+<li>A <strong>Viewer</strong> can view and interact with content.
+<ul>
+<li>The username is <code>viewer</code> and password is <code>viewer</code>.</li>
+</ul></li>
+<li>A <strong>Publisher</strong> has all the rights of the viewers and can also publish and manage content.
+<ul>
+<li>The username is <code>publisher</code> and password is <code>publisher</code>.</li>
+</ul></li>
+<li>An <strong>Administrator</strong> has all the rights of the publishers and can also manage users and server settings.
+<ul>
+<li>The username is <code>rstudio</code> and password is <code>rstudio</code>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="explore-content" class="section level2">
+<h2>Explore Content</h2>
+<div id="shiny-application" class="section level3">
+<h3>Shiny Application</h3>
+<p>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Shiny Application</code>, which will open the published Shiny app in the content portion of the screen along with controls for the application on the right side of the screen.</p>
+<p><img src="images/rstudio-connect-shiny-app.png" /></p>
+<p>Explore the published Shiny application by:</p>
+<ol style="list-style-type: decimal">
+<li>Hovering over different dates in the time series to view the Sortino Ratio for a given date.</li>
+<li>Changing the zoom level of the data for different ranges.</li>
+<li>Switching to different tabs along the bottom to view the data as a scatterplot, histogram, or density plot.</li>
+<li>Changing the parameters on the left in terms of portfolio risk level, starting date, MAR, and window.</li>
+</ol>
+</div>
+<div id="r-markdown-report" class="section level3">
+<h3>R Markdown Report</h3>
+<p>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Report</code>, which will open the published report in the content portion of the screen along with controls for the application on the right side of the screen.</p>
+<p>This R Markdown report is parameterized and can be re-run with different settings and saved, emailed to other collaborators and viewers, or scheduled to be run on a recurring basis.</p>
+<p><img src="images/rstudio-connect-rmarkdown-report.png" /></p>
+<p>Explore the published R Markdown Report by:</p>
+<ol style="list-style-type: decimal">
+<li>Click on the <code>Input</code> drawer on the left side of the screen to view the parameters for the report.</li>
+<li>Change some of the parameters such as the date or portfolio.</li>
+<li>Press the <code>Run Report</code> button to regenerate the report with the updated parameters.</li>
+<li>Once the new report is generated, you can press the <code>Save As</code> button to save the newly generated report.</li>
+</ol>
+</div>
+<div id="plumber-api" class="section level3">
+<h3>Plumber API</h3>
+<p>From the RStudio Connect landing page, click on the published API called <code>Stock Information Plumber API</code>, which will open the published API and show the endpoints that are available. In this published API, there are two endpoints that can be queried.</p>
+<p>Let’s query the <code>/price</code> endpoint to get historical prices for a given ticker symbol.</p>
+<ol style="list-style-type: decimal">
+<li>Click the <code>/price</code> bar near the bottom of the screen to expand the details of the endpoint.</li>
+<li>Click the <code>Try it Out</code> button to show the fields for the inputs to the API endpoint.</li>
+<li>Enter <code>AAPL</code> in the <code>ticker</code> field.</li>
+<li>Click the execute button to submit a request to the API endpoint.</li>
+</ol>
+<p><img src="images/rstudio-connect-published-api.png" /></p>
+<p>The results of the query appear in the response body field, which shows the historical returned as a JSON object. This API could be queried by other published assets or consumed by systems external to RStudio Connect using API tokens.</p>
+</div>
+</div>
+<div id="user-exercises" class="section level2">
+<h2>User Exercises</h2>
+<p>RStudio Connect is powered by R, so it knows how to run all of your data products. Perform these tasks in RStudio Connect.</p>
+<div id="adding-collaborators" class="section level3">
+<h3>Adding collaborators</h3>
+<p>For each deployed project, you can define which types of users can access the published version of content and who can make changes to the content.</p>
+<p>Let’s add a collaborator to a Shiny app.</p>
+<ol style="list-style-type: decimal">
+<li>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Shiny Application</code>.</li>
+<li>Click the <code>Access</code> tab in the project settings on the right side of the screen.</li>
+<li>Add the user <code>publisher</code> as a collaborator by typing their username in the field under <code>Who can change this document</code>.</li>
+<li>Click the <code>publisher</code> user to add them as a collaborator to this project.</li>
+</ol>
+<p><img src="images/rstudio-connect-collaborator.png" /></p>
+<p>Now, the <code>publisher</code> user has the ability to manage and update this application.</p>
+</div>
+<div id="scaling-shiny-apps" class="section level3">
+<h3>Scaling Shiny apps</h3>
+<ol style="list-style-type: decimal">
+<li>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Shiny Application</code>.</li>
+<li>Click the <code>Runtime</code> tab in the project settings on the right side of the screen.</li>
+<li>Under <code>Runtime settings</code>, choose the <code>Specify custom settings</code> option.</li>
+<li>Set the <code>Max processes</code> to <code>5</code>.</li>
+<li>Set the <code>Max connections per process</code> to <code>10</code>.</li>
+<li>Click the <code>Save</code> button.</li>
+</ol>
+<p><img src="images/rstudio-connect-runtime-settings.png" /></p>
+<p>After configuring these new runtime settings, your Shiny app will be able to scale up as needed to handle a higher number of concurrent users and connections.</p>
+</div>
+<div id="sending-reports-by-email" class="section level3">
+<h3>Sending reports by email</h3>
+<p>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Report</code>, which will open the published report. This parameterized document contains multiple inputs that can be varied, then the report can be re-run and the output can be saved as new versions of the report.</p>
+<p>Let’s change some of the parameters and send a copy of the report via email.</p>
+<ol style="list-style-type: decimal">
+<li>Click the <code>Input</code> drawer on the left side of the report.</li>
+<li>Change the <code>Start Date</code> to <code>2010-02-01</code>.</li>
+<li>Change the <code>portfolio</code> field to <code>aggressive_portfolio_returns</code>.</li>
+<li>Click the <code>Run Report</code> button.</li>
+<li>After the new output is shown, click the <code>Save</code> button, enter a name for the new report, and click <code>OK</code>.</li>
+<li>On the top right navigation bar, click the email icon.</li>
+<li>Click the <code>Send</code> button to send a copy of the report via email.</li>
+</ol>
+<p>Navigate to the <a href="webmail/" target="_blank">webmail interface</a> in the QuickStart. You’l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.</p>
+<p><img src="images/rstudio-connect-webmail-interface.png" /></p>
+</div>
+<div id="scheduling-report-outputs" class="section level3">
+<h3>Scheduling report outputs</h3>
+<p>You can schedule reports to be saved or sent by email to a list of users on a recurring basis.</p>
+<p>From the RStudio Connect landing page, click on the published document called <code>Stock Portfolio Report</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Click the <code>Schedule</code> tab in the project settings on the right side of the screen.</li>
+<li>Check the box to <code>Schedule output for default</code>.</li>
+<li>Choose a <code>Schedule type</code> such as <code>Daily</code>.</li>
+<li>Check the option to <code>Send email after update</code>.</li>
+<li>Click the <code>Save</code> button, then your report will re-run, publish the new output, and send an email update.</li>
+</ol>
+<p>Navigate to the <a href="webmail/" target="_blank">webmail interface</a> in the QuickStart. You’l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.</p>
+<p><img src="images/rstudio-connect-webmail-interface.png" /></p>
+</div>
+</div>
+<div id="administrator-exercises" class="section level2">
+<h2>Administrator Exercises</h2>
+<p>The tasks in this section would be performed by an administrator user in RStudio Connect.</p>
+<div id="managing-users" class="section level3">
+<h3>Managing users</h3>
+<p>From the RStudio Connect landing page, click on the <code>People</code> item in the top navigation bar.</p>
+<p>You’ll see a list of all users who have registered accounts in RStudio Connect.</p>
+<p>You can click on a particular user to view a list of content published by that user, and you have the ability to edit fields or lock access to their user account.</p>
+</div>
+<div id="monitoring-usage-metrics" class="section level3">
+<h3>Monitoring usage metrics</h3>
+<p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar.</p>
+<p>You’ll see an administrator dashboard with information about the CPU and RAM usage on RStudio Connect, the number of active users and Shiny connections, and a list of processes that are running alongside published content.</p>
+<p><img src="images/rstudio-connect-metrics.png" /></p>
+<p>You can change the range to view RStudio Connect activity in terms of recent hours, days, weeks, and more.</p>
+</div>
+<div id="setting-vanity-app-urls" class="section level3">
+<h3>Setting vanity app URLs</h3>
+<ol style="list-style-type: decimal">
+<li>From the RStudio Connect landing page, click on the published document called <code>Stock Information Plumber API</code>.</li>
+<li>Click the <code>Access</code> tab in the project settings on the right side of the screen.</li>
+<li>Change the vanity URL for the API to <code>/stock-portfolio/api/v1/</code>.</li>
+<li>Click the <code>Save</code> button.</li>
+</ol>
+<p>Now, you can access the stock information API by visiting the <a href="http://localhost:5000/rsconnect/stock-portfolio/api/v1/__swagger__/">new vanity URL</a> in your browser.</p>
+</div>
+<div id="adding-tags-to-content" class="section level3">
+<h3>Adding tags to content</h3>
+<p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar, then click the <code>Tags</code> item to view a list of tags that have been defined.</p>
+<ol style="list-style-type: decimal">
+<li>Add a new category by clicking the <code>New Category</code> button on the top right of the screen and entering a name for the category.</li>
+<li>Add a tag under a category by clicking <code>New tag</code> under a category and entering a name for the tag.</li>
+</ol>
+<p><img src="images/rstudio-connect-tags.png" /></p>
+<p>Tags can be selected by owners or collaborators on a per-project basis. Users can use these tags from the landing page to filter for certain projects.</p>
+<p>The tag schema can be customized in any way that maps to your organization’s needs.</p>
+</div>
+<div id="viewing-audit-logs" class="section level3">
+<h3>Viewing audit logs</h3>
+<p>From the RStudio Connect landing page, click on the <code>Admin</code> item in the top navigation bar, then click the <code>Audit Logs</code> item to view a history of the activity that has been performed on RStudio Connect.</p>
+<p><img src="images/rstudio-connect-audit-logs.png" /></p>
+</div>
+<div id="viewing-system-information" class="section level3">
+<h3>Viewing system information</h3>
+<p>From the RStudio Connect landing page, click on the <code>Documentation</code> item in the top navigation bar. You can view a list of available R versions that have been configured with RStudio Connect.</p>
+<p><img src="images/rstudio-connect-about.png" /></p>
+<p>Click on the <code>Server API Reference</code> link to view documentation related to various APIs that can be used to programmatically obtain audit logs, create published projects, gather statistics for published apps, and more.</p>
+<p><img src="images/rstudio-connect-api-documentation.png" /></p>
+</div>
+</div>
+<div id="publishing-content" class="section level2">
+<h2>Publishing Content</h2>
+<p>Push-button publishing is an easy way to publish content from the RStudio IDE or Server Pro to RStudio Connect.</p>
+<p>You can configure the RStudio IDE on your local machine to try out publishing of your own content to the instance of RStudio Connect in the QuickStart. Refer to the documentation to connect your <a href="http://docs.rstudio.com/connect/user/connecting.html">RStudio IDE to RStudio Connect</a>.</p>
+<p>The URL of your RStudio Connect server in the QuickStart is <code>http://localhost:5000/rsconnect</code>.</p>
+<p>Once you’ve connected the account to your RStudio IDE, you can publish content to RStudio Connect.</p>
+<p><img src="images/rstudio-connect-publish-from-ide.png" /></p>
+</div>
+
+<div id="footer">
+  <div class="container text-center">
+    <p class="text-muted credit">RStudio, Inc., 250 Northern Ave, Boston, MA 02210, 844-448-1212</p>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

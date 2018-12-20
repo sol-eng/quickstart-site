@@ -14,9 +14,15 @@ You can follow through the tasks in sequential order, starting with user tasks a
 
 ## Getting Started
 
-First, we'll log in and view the data products that have been published to RStudio Connect.
+The RStudio QuickStart is pre-populated with apps, reports, and APIs that have been published.
+
+* **Shiny Apps**. Host, manage, and scale your Shiny applications.
+* **R Markdown Documents**. Schedule and distribute your R Markdown documents and reports.
+* **Plumber APIs**. Expose any R function as an API.
 
 ### Logging in
+
+First, we'll log in and view the data products that have been published to RStudio Connect.
 
 Navigate to the <a href="rsconnect/" target="_blank">RStudio Connect interface</a>.
 
@@ -26,46 +32,54 @@ Click the `Log In` link on the top right corner of the `Welcome to RStudio Conne
 
 Log in with the account username `rstudio` and password `rstudio`, which has administrator priviledges.
 
-Note: The `rstudio` user is has administrator privileges. There are three roles on RStudio Connect and, each has its own unique login:
-
-* **Viewer** can see and interact with content. Username and password: `viewer`.
-* **Publisher** all the rights of the viewers and can also create and manage content. Username and password: `publisher`.
-* **Administrator** all the rights of the publishers and can also manage the service. Username and password: `rstudio`.
-
 ### Exploring the landing page
 
 Once you are logged in to RStudio Connect, you'll see a landing page with a list of all of the content that has been published:
 
 ![](images/rstudio-connect-landing-page.png)
 
-### Content types
+### Default accounts and roles
 
-The RStudio Connect QuickStart comes pre-populated with apps, reports, and API's.
+The RStudio QuickStart is pre-populated with multiple users, each with a different role and credentials:
 
-* **Shiny**. Host, manage, and scale your Shiny applications.
-* **R Markdown**. Schedule and distribute your R Markdown documents reports.
-* **Plumber API's**. Expose any R function as an API.
+* A **Viewer** can view and interact with content.
+    * The username is `viewer` and password is `viewer`.
+* A **Publisher** has all the rights of the viewers and can also publish and manage content. 
+    * The username is `publisher` and password is `publisher`.
+* An **Administrator** has all the rights of the publishers and can also manage users and server settings.
+    * The username is `rstudio` and password is `rstudio`.
 
 ## Explore Content
 
-### Stocks Shiny Application
+### Shiny Application
 
-Click on the published document called `Stock Portfolio Shiny Application`, which will open the published Shiny app in the content portion of the screen along with controls for the application on the right side of the screen.
+From the RStudio Connect landing page, click on the published document called `Stock Portfolio Shiny Application`, which will open the published Shiny app in the content portion of the screen along with controls for the application on the right side of the screen.
 
-![](images/stock-portfolio-shiny-application.png)
+![](images/rstudio-connect-shiny-app.png)
 
-Explore the Shiny application by:
+Explore the published Shiny application by:
 
-1) Hovering over different dates in the time series to view the Sortino Ratio for a given date
-2) Changing the zoom level of the data for different ranges
+1) Hovering over different dates in the time series to view the Sortino Ratio for a given date.
+2) Changing the zoom level of the data for different ranges.
 3) Switching to different tabs along the bottom to view the data as a scatterplot, histogram, or density plot.
 4) Changing the parameters on the left in terms of portfolio risk level, starting date, MAR, and window.
 
-### Stocks R Markdown Report
+### R Markdown Report
 
-Describe the R Markdown report. 
+From the RStudio Connect landing page, click on the published document called `Stock Portfolio Report`, which will open the published report in the content portion of the screen along with controls for the application on the right side of the screen.
 
-### Stocks Plumber API
+This R Markdown report is parameterized and can be re-run with different settings and saved, emailed to other collaborators and viewers, or scheduled to be run on a recurring basis.
+
+![](images/rstudio-connect-rmarkdown-report.png)
+
+Explore the published R Markdown Report by:
+
+1) Click on the `Input` drawer on the left side of the screen to view the parameters for the report.
+2) Change some of the parameters such as the date or portfolio.
+3) Press the `Run Report` button to regenerate the report with the updated parameters.
+4) Once the new report is generated, you can press the `Save As` button to save the newly generated report.
+
+### Plumber API
 
 From the RStudio Connect landing page, click on the published API called `Stock Information Plumber API`, which will open the published API and show the endpoints that are available. In this published API, there are two endpoints that can be queried.
 
@@ -84,26 +98,35 @@ The results of the query appear in the response body field, which shows the hist
 
 RStudio Connect is powered by R, so it knows how to run all of your data products. Perform these tasks in RStudio Connect.
 
-### Add collaborators
+### Adding collaborators
 
-Open the stocks Shiny application.
+For each deployed project, you can define which types of users can access the published version of content and who can make changes to the content.
 
-On the right side of the screen, you'll see an `Access` pane that defines which types of users can access the published version of the Shiny app and who can make changes to the document.
+Let's add a collaborator to a Shiny app.
 
-Let's add a collaborator to this Shiny app.
-
-1) Using the `Access` pane, add the user `publisher` as a collaborator by typing their username in the field under `Who can change this document`.
-2) Click the `publisher` user to add them as a collaborator to this project.
+1) From the RStudio Connect landing page, click on the published document called `Stock Portfolio Shiny Application`.
+2) Click the `Access` tab in the project settings on the right side of the screen.
+3) Add the user `publisher` as a collaborator by typing their username in the field under `Who can change this document`.
+4) Click the `publisher` user to add them as a collaborator to this project.
 
 ![](images/rstudio-connect-collaborator.png)
 
 Now, the `publisher` user has the ability to manage and update this application.
 
-### Scale your Shiny app
+### Scaling Shiny apps
 
-### Email your reports
+1) From the RStudio Connect landing page, click on the published document called `Stock Portfolio Shiny Application`.
+2) Click the `Runtime` tab in the project settings on the right side of the screen.
+3) Under `Runtime settings`, choose the `Specify custom settings` option.
+4) Set the `Max processes` to `5`.
+5) Set the `Max connections per process` to `10`.
+6) Click the `Save` button.
 
-This QuickStart ships with an email client. Open the Stocks R Markdown Report.
+![](images/rstudio-connect-runtime-settings.png)
+
+After configuring these new runtime settings, your Shiny app will be able to scale up as needed to handle a higher number of concurrent users and connections.
+
+### Sending reports by email
 
 From the RStudio Connect landing page, click on the published document called `Stock Portfolio Report`, which will open the published report. This parameterized document contains multiple inputs that can be varied, then the report can be re-run and the output can be saved as new versions of the report.
 
@@ -119,45 +142,23 @@ Let's change some of the parameters and send a copy of the report via email.
 
 Navigate to the <a href="webmail/" target="_blank">webmail interface</a> in the QuickStart. You'l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.
 
-![](images/stock-portfolio-shiny-application.png)
+![](images/rstudio-connect-webmail-interface.png)
 
-Note that you can also schedule reports to be saved or sent by email to a list of users on a recurring basis using the `Schedule` tab in the project settings.
+### Scheduling report outputs
 
-### Schedule your report
+You can schedule reports to be saved or sent by email to a list of users on a recurring basis.
 
-## Publishing
+From the RStudio Connect landing page, click on the published document called `Stock Portfolio Report`.
 
-(do we really want this section?)
+1) Click the `Schedule` tab in the project settings on the right side of the screen.
+2) Check the box to `Schedule output for default`.
+3) Choose a `Schedule type` such as `Daily`.
+4) Check the option to `Send email after update`.
+5) Click the `Save` button, then your report will re-run, publish the new output, and send an email update.
 
-Use the RStudio IDE to build data products and publish them to RStudio Connect.
+Navigate to the <a href="webmail/" target="_blank">webmail interface</a> in the QuickStart. You'l see an email that contains the latest results from the report along with attached versions of the report in HTML and spreadsheet format.
 
-### How does publishing work
-
-Push button publishing is one way to publish. Here is how it works.
-
-* Builds a manifest
-* Ships it to RStudio Connect
-* Recreates the environment
-
-### Try it out
-
-You can configure the RStudio IDE on your local machine with the capability to publish projects to the instance of RStudio Connect in the QuickStart. Once configured, you can use push-button publishing to deploy your own applications to RStudio Connect.
-
-1) From the RStudio IDE on your local machine, create a new R Notebook and save the notebook to a file. You can also use your own sample project in the following steps.
-2) Click the RStudio Connect `Publish` button to prepare the project for publishing.
-3) Click `Next` in the dialog to continue to the step for configuring the RStudio Connect URL.
-4) For the public URL of the RStudio Connect server, enter `http://localhost:5000/rsconnect`.
-5) In the `Connect to R` browser window that opens, click the `Connect` button and login with the username `rstudio` and password `rstudio`.
-6) In the RStudio IDE, click on the `Connect Account` button to complete the authentication process.
-
-Now that we've added an account for RStudio Connect to your RStudio IDE, we can continue to the steps to publish the R Notebook.
-
-1) In the `Publish to Server` dialog, select the R Notebook that you want to publish. You can also select any files that are required for the notebook or project to run on RStudio Connect.
-2) Click the Publish button.
-
-![](images/rstudio-connect-publish-from-ide.png)
-
-After a few moments, you'll be directed to the published version of your project on RStudio Connect.
+![](images/rstudio-connect-webmail-interface.png)
 
 ## Administrator Exercises
 
@@ -181,6 +182,15 @@ You'll see an administrator dashboard with information about the CPU and RAM usa
 
 You can change the range to view RStudio Connect activity in terms of recent hours, days, weeks, and more.
 
+### Setting vanity app URLs
+
+1) From the RStudio Connect landing page, click on the published document called `Stock Information Plumber API`.
+2) Click the `Access` tab in the project settings on the right side of the screen.
+3) Change the vanity URL for the API to `/stock-portfolio/api/v1/`.
+4) Click the `Save` button.
+
+Now, you can access the stock information API by visiting the [new vanity URL](http://localhost:5000/rsconnect/stock-portfolio/api/v1/__swagger__/) in your browser.
+
 ### Adding tags to content
 
 From the RStudio Connect landing page, click on the `Admin` item in the top navigation bar, then click the `Tags` item to view a list of tags that have been defined.
@@ -194,13 +204,13 @@ Tags can be selected by owners or collaborators on a per-project basis. Users ca
 
 The tag schema can be customized in any way that maps to your organization's needs.
 
-### View audit logs
+### Viewing audit logs
 
 From the RStudio Connect landing page, click on the `Admin` item in the top navigation bar, then click the `Audit Logs` item to view a history of the activity that has been performed on RStudio Connect.
 
 ![](images/rstudio-connect-audit-logs.png)
 
-### View system information
+### Viewing system information
 
 From the RStudio Connect landing page, click on the `Documentation` item in the top navigation bar. You can view a list of available R versions that have been configured with RStudio Connect.
 
@@ -209,3 +219,15 @@ From the RStudio Connect landing page, click on the `Documentation` item in the 
 Click on the `Server API Reference` link to view documentation related to various APIs that can be used to programmatically obtain audit logs, create published projects, gather statistics for published apps, and more.
 
 ![](images/rstudio-connect-api-documentation.png)
+
+## Publishing Content
+
+Push-button publishing is an easy way to publish content from the RStudio IDE or Server Pro to RStudio Connect.
+
+You can configure the RStudio IDE on your local machine to try out publishing of your own content to the instance of RStudio Connect in the QuickStart. Refer to the documentation to connect your [RStudio IDE to RStudio Connect](http://docs.rstudio.com/connect/user/connecting.html).
+
+The URL of your RStudio Connect server in the QuickStart is `http://localhost:5000/rsconnect`.
+
+Once you've connected the account to your RStudio IDE, you can publish content to RStudio Connect.
+
+![](images/rstudio-connect-publish-from-ide.png)
