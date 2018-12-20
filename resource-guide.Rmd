@@ -25,9 +25,10 @@ title: "RStudio Connect Resource Guide"
         </div>
       </div>
       <div class="col-sm-5">
-        <h4 style="text-align:center">RStudio Connect is a publishing platform that makes sharing data science simple</h4>
         
         <img src="images/use-connect.png" alt="Explore RStudio Connect">
+        <br>
+        <h4 style="text-align:center">RStudio Connect is a publishing platform that makes sharing data science simple</h4>
         
       </div>
     </div>
