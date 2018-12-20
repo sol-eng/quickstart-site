@@ -34,7 +34,7 @@ RStudio is not the licensor of the <a href="#oss">Open Source Software Programs
 
 </div>
 <div id="rstudio-professional-products" class="section level3">
-<h3><a name="pro"></a><span style="color: #404040">RStudio Professional Products</span></h3>
+<h3><a name="pro"></a><span style="color: #404040;">RStudio Professional Products</span></h3>
 <ul>
  	<li><a href="https://www.rstudio.com/products/rstudio-server-pro/evaluation/">RStudio Server Pro</a></li>
  	<li><a href="https://www.rstudio.com/products/connect/evaluation/">RStudio Connect</a></li>
@@ -42,7 +42,7 @@ RStudio is not the licensor of the <a href="#oss">Open Source Software Programs
 </ul>
 </div>
 <div id="open-source-software-programs" class="section level3">
-<h3><a name="oss"></a><span style="color: #404040">Open Source Software Programs</span></h3>
+<h3><a name="oss"></a><span style="color: #404040;">Open Source Software Programs</span></h3>
 <ul>
  	<li><a href="https://www.r-project.org/Licenses/">R</a></li>
  	<li><a href="https://roundcube.net/license/">Roundcube</a></li>
