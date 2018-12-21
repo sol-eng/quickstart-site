@@ -16,13 +16,11 @@ $(function () {
   <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
   </p>
 </div>
-
 <!--/html_preserve-->
 
 ### Quick Links
 
 <!--html_preserve-->
-
 <div class="btn-group btn-group-justified" role="group">
   <a class="btn btn-default" href="rstudio/" target="_blank" role="button">RStudio Server Pro</a>
   <a class="btn btn-default" href="rsconnect/" target="_blank" role="button">RStudio Connect</a>
@@ -30,7 +28,6 @@ $(function () {
   <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
   <a class="btn btn-default" href="help.html" role="button">Help</a>
 </div>
-
 <!--/html_preserve-->
 
 <hr>
@@ -60,7 +57,6 @@ RStudio Professional products help enterprises support data science by managing 
     <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" target="_blank" role="button">More info &raquo;</a></p>
   </div>
 </div>
-
 <!--/html_preserve-->
 
 <hr>
