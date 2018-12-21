@@ -24,13 +24,13 @@ navbar:
         - text: "Documentation"
           href: help.html#documentation
         - text: "Webmail Server"
-          href: help.html#documentation
+          href: help.html#webmail-server
         - text: "---------"
         - text: "About"
         - text: "Intended Use"
           href: help.html#intended-use
         - text: "Terms of Use"
-          href: help.html#terms-of-use
+          href: help.html#terms-of-use-for-this-quickstart-virtual-machine
         - text: "RStudio Professional Products"
           href: help.html#rstudio-professional-products
         - text: "Open Source Software Programs"

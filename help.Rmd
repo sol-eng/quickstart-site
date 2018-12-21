@@ -1,6 +1,4 @@
----
-title: "Help / About"
----
+## Help
 
 ### Support and Feedback
 
@@ -12,11 +10,13 @@ Please note that professional support is not available for the QuickStart.
 
 Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) and can also be accessed within the products in the QuickStart.
 
-### Sample Webmail Server
+### Webmail Server
   
-A [sample webmail server](webmail/) is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
+A <a href="webmail/" target="_blank">webmail server</a> is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
 
 In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
+
+## About
 
 ### Intended Use
 
