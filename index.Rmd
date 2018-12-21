@@ -22,7 +22,9 @@ $(function () {
 
 <!-- TODO: INSERT TOOLBAR FOR QUICK ACCESS TO RSC, RSP, RSPM, MAIL -->
 
-<!-- TODO: INSERT BLURB ABOUT PRODUCTS -->
+### RStudio Professional Products
+
+RStudio Professional products help enterprises support data science by managing development environments, fostering collaboration, providing a content hub for data products, and providing consistent package management.
 
 <!--html_preserve-->
     <div class="container">
