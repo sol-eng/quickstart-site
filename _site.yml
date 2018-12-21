@@ -25,7 +25,6 @@ navbar:
           href: help.html#frequently-asked-questions
         - text: "RStudio Documentation"
           href: help.html#rstudio-documentation
-        - text: "---------"
         - text: "About"
         - text: "Intended Use"
           href: help.html#intended-use
