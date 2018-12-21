@@ -16,11 +16,24 @@ $(function () {
   <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
   </p>
 </div>
+
+<!--/html_preserve-->
+
+### Quick Links
+
+<!--html_preserve-->
+
+<div class="btn-group btn-group-justified" role="group">
+  <a class="btn btn-default" href="rstudio/" target="_blank" role="button">RStudio Server Pro</a>
+  <a class="btn btn-default" href="rsconnect/" target="_blank" role="button">RStudio Connect</a>
+  <a class="btn btn-default" href="packages/" target="_blank" role="button">Package Manager</a>
+  <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
+  <a class="btn btn-default" href="help.html" role="button">Help</a>
+</div>
+
 <!--/html_preserve-->
 
 <hr>
-
-<!-- TODO: INSERT TOOLBAR FOR QUICK ACCESS TO RSC, RSP, RSPM, MAIL -->
 
 ### RStudio Professional Products
 
@@ -53,6 +66,6 @@ RStudio Professional products help enterprises support data science by managing 
 
 <hr>
 
-#### Purchase RStudio Professional Products
+### Purchase RStudio Professional Products
 
 For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).

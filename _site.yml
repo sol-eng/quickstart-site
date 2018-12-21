@@ -16,8 +16,25 @@ navbar:
       href: resource-guide.html
       icon: fa-book
     - text: "Help / About"
-      href: help.html
       icon: fa-question-circle
+      menu:
+        - text: "Help"
+        - text: "Support and Feedback"
+          href: help.html#support-and-feedback
+        - text: "Documentation"
+          href: help.html#documentation
+        - text: "Webmail Server"
+          href: help.html#documentation
+        - text: "---------"
+        - text: "About"
+        - text: "Intended Use"
+          href: help.html#intended-use
+        - text: "Terms of Use"
+          href: help.html#terms-of-use
+        - text: "RStudio Professional Products"
+          href: help.html#rstudio-professional-products
+        - text: "Open Source Software Programs"
+          href: help.html#open-source-software-programs
 output:
   html_document:
     theme: readable

@@ -208,12 +208,40 @@ $(document).ready(function () {
     Resource Guide
   </a>
 </li>
-<li>
-  <a href="help.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question-circle"></span>
      
     Help / About
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Help</li>
+    <li>
+      <a href="help.html#support-and-feedback">Support and Feedback</a>
+    </li>
+    <li>
+      <a href="help.html#documentation">Documentation</a>
+    </li>
+    <li>
+      <a href="help.html#documentation">Webmail Server</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">About</li>
+    <li>
+      <a href="help.html#intended-use">Intended Use</a>
+    </li>
+    <li>
+      <a href="help.html#terms-of-use">Terms of Use</a>
+    </li>
+    <li>
+      <a href="help.html#rstudio-professional-products">RStudio Professional Products</a>
+    </li>
+    <li>
+      <a href="help.html#open-source-software-programs">Open Source Software Programs</a>
+    </li>
+  </ul>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -234,10 +262,6 @@ $(document).ready(function () {
 <p>Support and feedback related to the QuickStart should be sent via the <a href="https://community.rstudio.com/tags/c/r-admin/quickstart">RStudio Community forums</a>. Posts should be submitted to the <code>R Admins</code> category and tagged with the <code>quickstart</code> tag.</p>
 <p>Please note that professional support is not available for the QuickStart.</p>
 </div>
-<div id="intended-use" class="section level3">
-<h3>Intended Use</h3>
-<p>The QuickStart is primarily intended as a demo environment and is <strong>not</strong> supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
-</div>
 <div id="documentation" class="section level3">
 <h3>Documentation</h3>
 <p>Documentation for all RStudio products is available from <a href="http://docs.rstudio.com/">our website</a> and can also be accessed within the products in the QuickStart.</p>
@@ -246,6 +270,10 @@ $(document).ready(function () {
 <h3>Sample Webmail Server</h3>
 <p>A <a href="webmail/">sample webmail server</a> is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.</p>
 <p>In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.</p>
+</div>
+<div id="intended-use" class="section level3">
+<h3>Intended Use</h3>
+<p>The QuickStart is primarily intended as a demo environment and is <strong>not</strong> supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
 <!-- Terms of Use from https://www.rstudio.com/about/quickstart/ -->
 <div id="terms-of-use-for-this-quickstart-virtual-machine" class="section level3">
 <h3>

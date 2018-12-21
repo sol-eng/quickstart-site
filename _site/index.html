@@ -208,12 +208,40 @@ $(document).ready(function () {
     Resource Guide
   </a>
 </li>
-<li>
-  <a href="help.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question-circle"></span>
      
     Help / About
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Help</li>
+    <li>
+      <a href="help.html#support-and-feedback">Support and Feedback</a>
+    </li>
+    <li>
+      <a href="help.html#documentation">Documentation</a>
+    </li>
+    <li>
+      <a href="help.html#documentation">Webmail Server</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">About</li>
+    <li>
+      <a href="help.html#intended-use">Intended Use</a>
+    </li>
+    <li>
+      <a href="help.html#terms-of-use">Terms of Use</a>
+    </li>
+    <li>
+      <a href="help.html#rstudio-professional-products">RStudio Professional Products</a>
+    </li>
+    <li>
+      <a href="help.html#open-source-software-programs">Open Source Software Programs</a>
+    </li>
+  </ul>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -246,8 +274,22 @@ $(function () {
   </p>
 </div>
 
+
+<div id="quick-links" class="section level3">
+<h3>Quick Links</h3>
+
+
+<div class="btn-group btn-group-justified" role="group">
+  <a class="btn btn-default" href="rstudio/" target="_blank" role="button">RStudio Server Pro</a>
+  <a class="btn btn-default" href="rsconnect/" target="_blank" role="button">RStudio Connect</a>
+  <a class="btn btn-default" href="packages/" target="_blank" role="button">Package Manager</a>
+  <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
+  <a class="btn btn-default" href="help.html" role="button">Help</a>
+</div>
+
+
 <hr>
-<!-- TODO: INSERT TOOLBAR FOR QUICK ACCESS TO RSC, RSP, RSPM, MAIL -->
+</div>
 <div id="rstudio-professional-products" class="section level3">
 <h3>RStudio Professional Products</h3>
 <p>RStudio Professional products help enterprises support data science by managing development environments, fostering collaboration, providing a content hub for data products, and providing consistent package management.</p>
@@ -276,10 +318,10 @@ $(function () {
 </div>
 
 <hr>
-<div id="purchase-rstudio-professional-products" class="section level4">
-<h4>Purchase RStudio Professional Products</h4>
-<p>For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
 </div>
+<div id="purchase-rstudio-professional-products" class="section level3">
+<h3>Purchase RStudio Professional Products</h3>
+<p>For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
 </div>
 
 <div id="footer">

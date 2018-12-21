@@ -8,10 +8,6 @@ Support and feedback related to the QuickStart should be sent via the [RStudio C
 
 Please note that professional support is not available for the QuickStart.
 
-### Intended Use
-
-The QuickStart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
-
 ### Documentation
 
 Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) and can also be accessed within the products in the QuickStart.
@@ -21,6 +17,10 @@ Documentation for all RStudio products is available from [our website](http://do
 A [sample webmail server](webmail/) is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
 
 In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
+
+### Intended Use
+
+The QuickStart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
 
 <!-- Terms of Use from https://www.rstudio.com/about/quickstart/ -->
 
