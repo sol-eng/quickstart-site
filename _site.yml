@@ -1,10 +1,10 @@
 name: "quickstart-site"
-title: "RStudio Quickstart VM"
+title: "RStudio QuickStart"
 description: |
-  RStudio Quickstart VM
+  RStudio QuickStart
 output_dir: "_site"
 navbar:
-  title: "RStudio Professional Quickstart"
+  title: "RStudio QuickStart"
   right:
     - text: "Getting Started"
       href: index.html
@@ -15,9 +15,26 @@ navbar:
     - text: "Resource Guide"
       href: resource-guide.html
       icon: fa-book
-    - text: "Legal"
-      href: legal.html
-      icon: fa-balance-scale
+    - text: "Help / About"
+      icon: fa-question-circle
+      menu:
+        - text: "Help"
+        - text: "Support and Feedback"
+          href: help.html#support-and-feedback
+        - text: "Documentation"
+          href: help.html#documentation
+        - text: "Webmail Server"
+          href: help.html#webmail-server
+        - text: "---------"
+        - text: "About"
+        - text: "Intended Use"
+          href: help.html#intended-use
+        - text: "Terms of Use"
+          href: help.html#terms-of-use-for-this-quickstart-virtual-machine
+        - text: "RStudio Professional Products"
+          href: help.html#rstudio-professional-products
+        - text: "Open Source Software Programs"
+          href: help.html#open-source-software-programs
 output:
   html_document:
     theme: readable
