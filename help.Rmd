@@ -6,21 +6,29 @@ Support and feedback related to the QuickStart should be sent via the [RStudio C
 
 Please note that professional support is not available for the QuickStart.
 
-### Documentation
+### Frequently Asked Questions
 
-Documentation for all RStudio products is available from [our website](http://docs.rstudio.com/) and can also be accessed within the products in the QuickStart.
+View a list of [frequently asked questions](https://support.rstudio.com/hc/en-us/articles/360014001734-RStudio-Quickstart-FAQ) related to the RStudio QuickStart.
 
-### Webmail Server
-  
-A <a href="webmail/" target="_blank">webmail server</a> is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
+### RStudio Documentation
 
-In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an real-world installation, RStudio Products integrate securely with your email infrastructure to ensure that information remains private.
+View documentation for all RStudio products on the [RStudio Documentation](http://docs.rstudio.com/) page, or by accessing the documentation links from within the products in the QuickStart.
+
+You can also view a list of curated [RStudio Connect Support Documentation](https://support.rstudio.com/hc/en-us/sections/204688508-RStudio-Connect).
+
+<hr>
 
 ## About
 
 ### Intended Use
 
 The QuickStart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
+
+### Webmail Server
+
+A <a href="webmail/" target="_blank">webmail server</a> is available within the QuickStart to demonstrate RStudio Connect’s capability for sending automated, customized emails.
+
+In the QuickStart, all email from RStudio products is configured to be sent into a single mailbox. In an actual implementation, RStudio Products can integrate securely with your email infrastructure to ensure that information remains private.
 
 <!-- Terms of Use from https://www.rstudio.com/about/quickstart/ -->
 
