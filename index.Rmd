@@ -40,28 +40,27 @@ $(function () {
 RStudio Professional products help enterprises support data science by managing development environments, fostering collaboration, providing a content hub for data products, and providing consistent package management.
 
 <!--html_preserve-->
-    <div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <h4>RStudio Server Pro</h4>
-      <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
-      <p><a class="btn btn-default" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" target="_blank" role="button">More info &raquo;</a></p>
-    </div>
-    <div class="col-md-3">
-      <h4>RStudio Connect</h4>
-      <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
-      <p><a class="btn btn-default" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" target="_blank" role="button">More info &raquo;</a></p>
-   </div>
-    <div class="col-md-3">
-      <h4>RStudio Package Manager</h4>
-      <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
-      <p><a class="btn btn-default" href="packages/" target="_blank" role="button">Log in &raquo;</a>
-      <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" target="_blank" role="button">More info &raquo;</a></p>
-    </div>
+<div class="row">
+  <div class="col-md-4">
+    <h4>RStudio Server Pro</h4>
+    <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
+    <p><a class="btn btn-default" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
+    <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" target="_blank" role="button">More info &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h4>RStudio Connect</h4>
+    <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
+    <p><a class="btn btn-default" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
+    <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" target="_blank" role="button">More info &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h4>RStudio Package Manager</h4>
+    <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
+    <p><a class="btn btn-default" href="packages/" target="_blank" role="button">Log in &raquo;</a>
+    <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" target="_blank" role="button">More info &raquo;</a></p>
   </div>
 </div>
+
 <!--/html_preserve-->
 
 <hr>
