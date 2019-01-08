@@ -1,5 +1,5 @@
 ---
-title: "RStudio Connect Resource Guide"
+title: "RStudio QuickStart - Resource Guide"
 ---
 
 <!--html_preserve-->
