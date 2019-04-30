@@ -1,10 +1,10 @@
 name: "quickstart-site"
-title: "RStudio QuickStart"
+title: "RStudio Team Trial"
 description: |
-  RStudio QuickStart
+  RStudio Team Trial Edition
 output_dir: "_site"
 navbar:
-  title: "RStudio QuickStart"
+  title: "RStudio Team Trial"
   right:
     - text: "Getting Started"
       href: index.html
