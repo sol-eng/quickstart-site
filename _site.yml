@@ -9,7 +9,7 @@ navbar:
     - text: "Getting Started"
       href: index.html
       icon: fa-handshake
-    - text: "Product Tour"
+    - text: "RStudio Connect Tour"
       href: tour.html
       icon: fa-compass
     - text: "Resource Guide"
