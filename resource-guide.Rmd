@@ -1,5 +1,5 @@
 ---
-title: "RStudio Team Trial Edition - Resource Guide"
+title: "RStudio Team Trial - Resource Guide"
 ---
 
 <!--html_preserve-->
