@@ -23,13 +23,13 @@ $(function () {
   <div class="col-md-3">
     <br><br>
     <div class="row">
-      <a class="btn btn-primary btn-lg" href="tour.html" role="button">RStudio Connect Tour</a>
+      <a class="btn btn-default btn-lg" href="tour.html" role="button">RStudio Connect Tour</a>
     </div>
     <br><br>
     <div class="row">
-      <br><br><br>
+      <p><img src="images/demo-icon.png" width="85"></p>
     </div>
-    <br><br>
+    <br>
     <div class="row">
       <a class="btn btn-default btn-lg" href="https://www.rstudio.com/about/contact-sales/" role="button">Contact Sales</a>
     </div>
@@ -52,11 +52,10 @@ $(function () {
 <br><br>
 
 <div class="btn-group btn-group-justified" role="group">
-  <a class="btn btn-default" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">RStudio Server Pro</a>
-  <a class="btn btn-default" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">RStudio Connect</a>
-  <a class="btn btn-default" href="packages/" target="_blank" role="button">Package Manager</a>
   <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
   <a class="btn btn-default" href="help.html" role="button">Help</a>
+  <a class="btn btn-default" href="about.html" role="button">About</a>
+  <a class="btn btn-default" href="https://support.rstudio.com/hc/en-us/articles/360022407754" role="button">RStudio Team FAQs</a>
 </div>
 
 <!--/html_preserve-->
