@@ -26,6 +26,8 @@ navbar:
         - text: "RStudio Documentation"
           href: help.html#rstudio-documentation
         - text: "About"
+        - text: "Version"
+          href: help.html#quickstart-version
         - text: "Intended Use"
           href: help.html#intended-use
         - text: "Webmail Server"
