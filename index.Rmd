@@ -14,6 +14,10 @@ $(function () {
 
 <p><img src="images/quickstart-welcome-banner.png"></p>
 
+<h4>Experience RStudio Team using a virtual machine on your desktop.</h4> 
+<p>RStudio Team QuickStart VM is a simple way to get hands-on experience and create your own personalized demos.</p>
+
+
 <hr>
 
 <div class="row">
@@ -54,7 +58,7 @@ $(function () {
 <div class="btn-group btn-group-justified" role="group">
   <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
   <a class="btn btn-default" href="help.html" role="button">Help</a>
-  <a class="btn btn-default" href="about.html" role="button">About</a>
+  <a class="btn btn-default" href="http://www.rstudio.com/products/team" role="button">RStudio Team</a>
   <a class="btn btn-default" href="https://support.rstudio.com/hc/en-us/articles/360022407754" role="button">RStudio Team FAQs</a>
 </div>
 
@@ -67,9 +71,17 @@ $(function () {
 
 RStudio Team is a bundle of RStudio’s popular professional software for statistical data-analysis, package management, and sharing data products. RStudio Team includes RStudio Server Pro, RStudio Package Manager, and RStudio Connect. 
 
-<!--html_preserve-->
-<p><img src="images/team-full.png"></p>
-<!--/html_preserve-->
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+    <!--html_preserve-->
+    <p><img src="images/team-full.png"></p>
+    <!--/html_preserve-->
+  </div>
+  <div class="col-md-2">
+  </div>
+</div>
 
 <hr>
 
