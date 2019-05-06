@@ -5,14 +5,14 @@ title: "RStudio QuickStart - Help"
 <!--html_preserve-->
 <script type="text/javascript">
 function set_version() {
-    var obj = document.getElementById("quickstart-version");
     const Http = new XMLHttpRequest();
     const url=window.location.origin + '/version';
     Http.open("GET", url);
 
     // important to create this listenter _before_ we send it... #asyncprobs
     Http.onreadystatechange=(e)=>{
-      if (Http.status == 200) {
+      var obj = document.getElementById("quickstart-version");
+      if (Http.status == 200 && Http.responseText != "") {
         obj.innerHTML = obj.innerHTML.replace('Unknown', Http.responseText);
       }
     }
