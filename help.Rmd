@@ -1,5 +1,5 @@
 ---
-title: "RStudio QuickStart - Help"
+title: "RStudio Team QuickStart VM - Help"
 ---
 
 ## Help
