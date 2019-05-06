@@ -1,10 +1,10 @@
 name: "quickstart-site"
-title: "RStudio Team Trial"
+title: "RStudio Team QuickStart VM"
 description: |
-  RStudio Team Trial Edition
+  RStudio Team QuickStart VM
 output_dir: "_site"
 navbar:
-  title: "RStudio Team Trial"
+  title: "RStudio Team QuickStart VM"
   right:
     - text: "Getting Started"
       href: index.html
@@ -12,10 +12,10 @@ navbar:
     - text: "RStudio Connect Tour"
       href: tour.html
       icon: fa-compass
-    - text: "Resource Guide"
+    - text: "Guide"
       href: resource-guide.html
       icon: fa-book
-    - text: "Help / About"
+    - text: "Help"
       icon: fa-question-circle
       menu:
         - text: "Help"
