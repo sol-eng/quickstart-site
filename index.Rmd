@@ -12,7 +12,7 @@ $(function () {
 
 <!--html_preserve-->
 
-<p><img src="images/welcome-banner.png"></p>
+<p><img src="images/quickstart-welcome-banner.png"></p>
 
 <hr>
 
@@ -69,12 +69,12 @@ $(function () {
 RStudio Team is a bundle of RStudio’s popular professional software for statistical data-analysis, package management, and sharing data products. RStudio Team includes RStudio Server Pro, RStudio Package Manager, and RStudio Connect. 
 
 <!--html_preserve-->
-<p><img src="images/about-team.png"></p>
+<p><img src="images/team-full.png"></p>
 <!--/html_preserve-->
 
 <hr>
 
-### RStudio Team Trial - Intended Use
+### RStudio Team QuickStart VM - Intended Use
 
-RStudio Team Trial is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
+RStudio Team QuickStart is primarily intended as a demo environment and is **not** supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please [contact our sales team](https://www.rstudio.com/about/contact-sales/).
 
