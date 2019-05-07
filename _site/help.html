@@ -326,6 +326,9 @@ $(document).ready(function () {
     </li>
     <li class="dropdown-header">About</li>
     <li>
+      <a href="help.html#quickstart-version">Version</a>
+    </li>
+    <li>
       <a href="help.html#intended-use">Intended Use</a>
     </li>
     <li>
@@ -356,6 +359,27 @@ $(document).ready(function () {
 </div>
 
 
+
+<script type="text/javascript">
+function set_version() {
+    const Http = new XMLHttpRequest();
+    const url=window.location.origin + '/version';
+    Http.open("GET", url);
+
+    // important to create this listenter _before_ we send it... #asyncprobs
+    Http.onreadystatechange=(e)=>{
+      var obj = document.getElementById("quickstart-version");
+      if (Http.status == 200 && Http.responseText != "") {
+        obj.innerHTML = obj.innerHTML.replace('Unknown', Http.responseText);
+      }
+    }
+    Http.send();
+}
+window.onload = function() {
+  set_version()
+}
+</script>
+
 <div id="help" class="section level2">
 <h2>Help</h2>
 <div id="support-and-feedback" class="section level3">
@@ -376,6 +400,10 @@ $(document).ready(function () {
 </div>
 <div id="about" class="section level2">
 <h2>About</h2>
+<div id="quickstart-version" class="section level3">
+<h3>Version</h3>
+<p>Quickstart VM Version: Unknown</p>
+</div>
 <div id="intended-use" class="section level3">
 <h3>Intended Use</h3>
 <p>The QuickStart is primarily intended as a demo environment and is <strong>not</strong> supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
