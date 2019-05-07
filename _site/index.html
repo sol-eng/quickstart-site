@@ -11,7 +11,7 @@
 
 
 
-<title>RStudio QuickStart - Getting Started</title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -100,6 +99,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +116,6 @@ body {
   padding-top: 71px;
   margin-top: -71px;
 }
-
 .section h2 {
   padding-top: 71px;
   margin-top: -71px;
@@ -134,6 +135,43 @@ body {
 .section h6 {
   padding-top: 71px;
   margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +193,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -180,7 +277,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">RStudio QuickStart</a>
+      <a class="navbar-brand" href="index.html">RStudio Team QuickStart VM</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -198,21 +295,21 @@ $(document).ready(function () {
   <a href="tour.html">
     <span class="fa fa-compass"></span>
      
-    Product Tour
+    RStudio Connect Tour
   </a>
 </li>
 <li>
   <a href="resource-guide.html">
     <span class="fa fa-book"></span>
      
-    Resource Guide
+    Guide
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question-circle"></span>
      
-    Help / About
+    Help
      
     <span class="caret"></span>
   </a>
@@ -254,7 +351,6 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">RStudio QuickStart - Getting Started</h1>
 
 </div>
 
@@ -267,59 +363,106 @@ $(function () {
 </script>
 
 
-<div class="jumbotron">
-  <p><img src="images/rstudio-logo.png" width="150px"></p>
-  <h3>Welcome to the RStudio QuickStart!</h3>
-  <p>The RStudio QuickStart includes evaluation versions of RStudio Professional products that are pre-installed and pre-configured to make it easy for you try them on your own machine.</p>
-  <p>
-  <a class="btn btn-primary btn-lg" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
-  <a class="btn btn-primary btn-lg" href="tour.html" role="button">Take a Tour of RStudio Connect &raquo;</a>
-  </p>
+
+<p><img src="images/quickstart-banner.png"></p>
+
+<h4>Experience RStudio Team using a virtual machine on your desktop.</h4> 
+<p>RStudio Team QuickStart VM is a simple way to get hands-on experience and create your own personalized demos.</p>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+  <style type="text/css">
+ .tg  {border-collapse:collapse;border-spacing:0;width: 100%;}
+.tg td{font-family:"Source Sans Pro", sans-serif;font-size:16px;padding:10px 5px;border-style:solid;border-width:20px;overflow:hidden;word-break:normal;border-color:#fff;height:100px}
+.tg .tg-0lax{text-align:left;vertical-align:top} 
+.tg-num{height: 100px; width:100px; line-height:100px; font-size: 40pt; font-weight:bold; color:#fff; text-align: center; background-color: #74aadb;}
+.tg .tg-btn{text-align: center;}
+  </style>
+    <table class="tg">
+  <tr>
+    <td class="tg-0lax"><div class="tg-num">1</div></td>
+    <td class="tg-0lax">
+    <b>Explore</b> Is this your first time working with the full RStudio Team product
+    bundle? Take some time to learn how these products interact. The RStudio
+    Connect Tour is a great place to begin.
+    </td>
+    <td class="tg-0lax tg-btn">
+      <a class="btn btn-default btn-lg" href="tour.html" role="button">RStudio Connect Tour</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><div class="tg-num">2</div></td>
+    <td class="tg-0lax">
+    <b>Share</b> The best way to get other people excited about RStudio Team is to
+    demonstrate the workflow. Feel free to use the example assets that come
+    seeded on RStudio Connect, or publish some of your own.
+    </td>
+    <td class="tg-0lax tg-btn">
+      <p><img src="images/demo-icon.png" width="85"></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><div class="tg-num">3</div></td>
+    <td class="tg-0lax">
+    <b>Plan</b> This is a learning environment, and should not be used in any
+    production capacity. Please contact our sales team if you are interested in
+    putting together an evaluation on your own servers.
+    </td>
+    <td class="tg-0lax tg-btn">
+      <a class="btn btn-default btn-lg" href="https://www.rstudio.com/about/contact-sales/" role="button">Contact Sales</a>
+    </td>
+  </tr>
+</table>
+  </div>
 </div>
+
+<hr>
 
 <div id="quick-links" class="section level3">
 <h3>Quick Links</h3>
 
+
 <div class="btn-group btn-group-justified" role="group">
-  <a class="btn btn-default" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">RStudio Server Pro</a>
-  <a class="btn btn-default" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">RStudio Connect</a>
-  <a class="btn btn-default" href="packages/" target="_blank" role="button">Package Manager</a>
+<a class="btn btn-default btn-lg" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">RStudio Server Pro</a>
+  <a class="btn btn-primary btn-lg" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in to RStudio Connect &raquo;</a>
+  <a class="btn btn-default btn-lg" href="packages/" target="_blank" role="button">Package Manager</a>
+</div>
+
+<br><br>
+
+<div class="btn-group btn-group-justified" role="group">
   <a class="btn btn-default" href="webmail/" target="_blank" role="button">Webmail</a>
   <a class="btn btn-default" href="help.html" role="button">Help</a>
+  <a class="btn btn-default" href="http://www.rstudio.com/products/team" role="button">RStudio Team</a>
+  <a class="btn btn-default" href="https://support.rstudio.com/hc/en-us/articles/360022407754" role="button">RStudio Team FAQs</a>
 </div>
+
 
 <hr>
 </div>
-<div id="rstudio-professional-products" class="section level3">
-<h3>RStudio Professional Products</h3>
-<p>RStudio Professional products help enterprises support data science by managing development environments, fostering collaboration, providing a content hub for data products, and providing consistent package management.</p>
-
+<div id="rstudio-team" class="section level3">
+<h3>RStudio Team</h3>
+<p>RStudio Team is a bundle of RStudio’s popular professional software for statistical data-analysis, package management, and sharing data products. RStudio Team includes RStudio Server Pro, RStudio Package Manager, and RStudio Connect.</p>
 <div class="row">
-  <div class="col-md-4">
-    <h4>RStudio Server Pro</h4>
-    <p>Delivers productivity, security, metrics, and commercial support that professional data science teams need to develop at scale.</p>
-    <p><a class="btn btn-default" href="rstudio/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
-    <a class="btn btn-default" href="https://www.rstudio.com/products/rstudio-server-pro/" target="_blank" role="button">More info &raquo;</a></p>
-  </div>
-  <div class="col-md-4">
-    <h4>RStudio Connect</h4>
-    <p>Push-button publishing and deployment of data products, including Shiny apps, R Markdown documents, and Plumber APIs.</p>
-    <p><a class="btn btn-default" href="rsconnect/" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Default Username: rstudio Default Password: rstudio">Log in &raquo;</a>
-    <a class="btn btn-default" href="https://www.rstudio.com/products/connect/" target="_blank" role="button">More info &raquo;</a></p>
-  </div>
-  <div class="col-md-4">
-    <h4>RStudio Package Manager</h4>
-    <p>Repository management server to organize and centralize R packages across your team, department, or entire organization.</p>
-    <p><a class="btn btn-default" href="packages/" target="_blank" role="button">Log in &raquo;</a>
-    <a class="btn btn-default" href="https://www.rstudio.com/products/package-manager/" target="_blank" role="button">More info &raquo;</a></p>
-  </div>
-</div>
+<div class="col-md-2">
 
+</div>
+<div class="col-md-8">
+<pre><code>
+    <p><img src="images/team-full.png"></p>
+    </code></pre>
+</div>
+<div class="col-md-2">
+
+</div>
+</div>
 <hr>
 </div>
-<div id="purchase-rstudio-professional-products" class="section level3">
-<h3>Purchase RStudio Professional Products</h3>
-<p>For more information about running RStudio Professional products on your own enterprise infrastructure or details about pricing, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
+<div id="rstudio-team-quickstart-vm---intended-use" class="section level3">
+<h3>RStudio Team QuickStart VM - Intended Use</h3>
+<p>RStudio Team QuickStart is primarily intended as a demo environment and is <strong>not</strong> supported for use in any production capacity. For more information about using RStudio Professional products on your own enterprise infrastructure, please <a href="https://www.rstudio.com/about/contact-sales/">contact our sales team</a>.</p>
 </div>
 
 <div id="footer">

@@ -1,21 +1,21 @@
 name: "quickstart-site"
-title: "RStudio QuickStart"
+title: "RStudio Team QuickStart VM"
 description: |
-  RStudio QuickStart
+  RStudio Team QuickStart VM
 output_dir: "_site"
 navbar:
-  title: "RStudio QuickStart"
+  title: "RStudio Team QuickStart VM"
   right:
     - text: "Getting Started"
       href: index.html
       icon: fa-handshake
-    - text: "Product Tour"
+    - text: "RStudio Connect Tour"
       href: tour.html
       icon: fa-compass
-    - text: "Resource Guide"
+    - text: "Guide"
       href: resource-guide.html
       icon: fa-book
-    - text: "Help / About"
+    - text: "Help"
       icon: fa-question-circle
       menu:
         - text: "Help"
