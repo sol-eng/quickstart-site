@@ -1,0 +1,406 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "3.4.3",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "css/rstudio.css": {
+      "checksum": "32e45db52823ae756311b8eefb8f9ef8"
+    },
+    "favicon.ico": {
+      "checksum": "5f532edaf466da8f1518bd65d723dfa6"
+    },
+    "footer.html": {
+      "checksum": "6302f8e0d00fc7104bc4396592e4b959"
+    },
+    "help.html": {
+      "checksum": "778012a06dae030279da1ca907c10a90"
+    },
+    "images/about-team.png": {
+      "checksum": "ce2b8aa1fd76a2daeeac77811e99ddde"
+    },
+    "images/demo-icon.png": {
+      "checksum": "363c675acac8d0e398cc88847bd92aad"
+    },
+    "images/getting-started.png": {
+      "checksum": "b6f71c15b3ad574133b2d28c76657d6d"
+    },
+    "images/quickstart-banner.png": {
+      "checksum": "a8c53c8961ce4942a83e8e755054579b"
+    },
+    "images/rstudio-connect-about.png": {
+      "checksum": "898bb188c3955852cca9afe95068e97b"
+    },
+    "images/rstudio-connect-api-documentation.png": {
+      "checksum": "6c5aa1d5248e20729a61af66e2be04fc"
+    },
+    "images/rstudio-connect-audit-logs.png": {
+      "checksum": "5df8d359a09e44eb977c1698432c07c6"
+    },
+    "images/rstudio-connect-collaborator.png": {
+      "checksum": "3015642d9b9c0a7a48c1a7e62e2453c0"
+    },
+    "images/rstudio-connect-landing-page.png": {
+      "checksum": "6b76cd9c8633879eee37211579c9bb15"
+    },
+    "images/rstudio-connect-login.png": {
+      "checksum": "8a402b1477c674f5a9181af05dcde240"
+    },
+    "images/rstudio-connect-manage-users.png": {
+      "checksum": "a61cb97f08740a948fb648e06e374523"
+    },
+    "images/rstudio-connect-metrics.png": {
+      "checksum": "a747f3169ff9dcdec50123f73acfeb4f"
+    },
+    "images/rstudio-connect-publish-from-ide.png": {
+      "checksum": "08e3fc1f49fa3c31f584d367090336f8"
+    },
+    "images/rstudio-connect-published-api.png": {
+      "checksum": "5e60761eab9b762457d88f9badc209e6"
+    },
+    "images/rstudio-connect-rmarkdown-report.png": {
+      "checksum": "f51961f64e2511cd1e7d17d9f20bd639"
+    },
+    "images/rstudio-connect-runtime-settings.png": {
+      "checksum": "2a993874950d113be907b989cb1f7123"
+    },
+    "images/rstudio-connect-scheduled-report.png": {
+      "checksum": "922582f9fe58a01a9b5c12804fae1df6"
+    },
+    "images/rstudio-connect-shiny-app.png": {
+      "checksum": "d294d23e278d148876b9047bd2de8ad0"
+    },
+    "images/rstudio-connect-splash.png": {
+      "checksum": "b5a14e5f71127ccff27ff7d62daf72f7"
+    },
+    "images/rstudio-connect-tags.png": {
+      "checksum": "5b6399346d8f253472feccf834614dc8"
+    },
+    "images/rstudio-connect-webmail-interface.png": {
+      "checksum": "dc640c9e8be3f289c96fc94ec0412cfa"
+    },
+    "images/rstudio-logo.png": {
+      "checksum": "7ef34cac248c932fc44117560d3b40a2"
+    },
+    "images/team-full.png": {
+      "checksum": "62569ba5904928e6356e1df15d95cc55"
+    },
+    "images/team-mockup.png": {
+      "checksum": "83bdfcf1f21391dc54c76c3b47b47035"
+    },
+    "images/use-connect.png": {
+      "checksum": "16fe0b90a3dea5858d33c9cfe80aa37c"
+    },
+    "index.html": {
+      "checksum": "0943e729078a0f7a6472a53a0fac2861"
+    },
+    "README.html": {
+      "checksum": "c6da035fd5a4bb45bc094749792a446b"
+    },
+    "resource-guide.html": {
+      "checksum": "133710903f5527458a910eabedd5cba8"
+    },
+    "resource-pages/evaluation-tips.html": {
+      "checksum": "914c23ff2e14ce3e22d02a80495f5ab1"
+    },
+    "resource-pages/evaluation-tips.Rmd": {
+      "checksum": "544b27b9c5e74fd74ef3cbedda841a3b"
+    },
+    "resource-pages/page-imgs/enterprise-view.png": {
+      "checksum": "c0d847232422bff5c2fa4557fa8199c3"
+    },
+    "resource-pages/page-imgs/rds-toolchain.png": {
+      "checksum": "bd5044016ede4b9673752dbb5ebd18f8"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap-theme.css": {
+      "checksum": "659231dde1c53bd14bbcffa1456df892"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap-theme.css.map": {
+      "checksum": "ca7ee393ea214c018d316eee3acc7f39"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap-theme.min.css": {
+      "checksum": "bf3499da1c31113720e9e395691730ba"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap.css": {
+      "checksum": "4f159defb2641645834d0138a185a0e5"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap.css.map": {
+      "checksum": "ea1c5719baebc520c82606bf36408d4d"
+    },
+    "site_libs/bootstrap-3.3.5/css/bootstrap.min.css": {
+      "checksum": "aa3db69dbd9b05d8dfd439d464d02969"
+    },
+    "site_libs/bootstrap-3.3.5/css/cerulean.min.css": {
+      "checksum": "1d2c43758806d7f185143edbdb17e7e0"
+    },
+    "site_libs/bootstrap-3.3.5/css/cosmo.min.css": {
+      "checksum": "0ec01aa9d795cf2def140724344d668e"
+    },
+    "site_libs/bootstrap-3.3.5/css/darkly.min.css": {
+      "checksum": "37284cfd42bd0561fa4a337bbc7390cf"
+    },
+    "site_libs/bootstrap-3.3.5/css/flatly.min.css": {
+      "checksum": "04d98cd29a49176152a183ba608020f2"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/Lato.ttf": {
+      "checksum": "c45152a20fcaa8ae5d5611e947399dcc"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/LatoBold.ttf": {
+      "checksum": "a30435e0c5edc583b1f3552e48068e69"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/LatoItalic.ttf": {
+      "checksum": "4ffd11cfd26127dbd8c716fddeffa1e0"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/NewsCycle.ttf": {
+      "checksum": "9e3bb4acbffda54ebe710e081be3626d"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/NewsCycleBold.ttf": {
+      "checksum": "d754ba196153cfeef847cf2a68b68a0a"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSans.ttf": {
+      "checksum": "56edff6cd9c40bf507851c7af6d724ba"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSansBold.ttf": {
+      "checksum": "68b46e7ec5ff26f8c5948686ef0795e9"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSansBoldItalic.ttf": {
+      "checksum": "5e1cdd683bb56d6e69d5338e1c33dd79"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSansItalic.ttf": {
+      "checksum": "9e5e2bc48802a75eb9f0d954f3d4e45b"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSansLight.ttf": {
+      "checksum": "a957943fff1355620393d35cb3d6c7d1"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/OpenSansLightItalic.ttf": {
+      "checksum": "147ab98830dc2ba625dfcab85ca069dd"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/Raleway.ttf": {
+      "checksum": "f1f45bc019ec18a7705714b3478e6b1d"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/RalewayBold.ttf": {
+      "checksum": "9adbc922343f1b4b4b62b8bf85225e2c"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/Roboto.ttf": {
+      "checksum": "38861cba61c66739c1452c3a71e39852"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/RobotoBold.ttf": {
+      "checksum": "ad97d029a11d8b39692037e753d23d1f"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/RobotoLight.ttf": {
+      "checksum": "634f53eb79efa455a9e9d85d608b3447"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/RobotoMedium.ttf": {
+      "checksum": "88f29ea5a372d06f521395134f62ab91"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/SourceSansPro.ttf": {
+      "checksum": "f2d83436dcf3f53375518292e917643c"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/SourceSansProBold.ttf": {
+      "checksum": "206f41ff7cdb7df5dbfeda33c847b793"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/SourceSansProItalic.ttf": {
+      "checksum": "b5a02317c3d2de0275cfd1efef086f6f"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/SourceSansProLight.ttf": {
+      "checksum": "6a9d4d28a117a8364376de2f17ee5ff9"
+    },
+    "site_libs/bootstrap-3.3.5/css/fonts/Ubuntu.ttf": {
+      "checksum": "725b5e2f8b7e0bfac66edad5c2291b86"
+    },
+    "site_libs/bootstrap-3.3.5/css/journal.min.css": {
+      "checksum": "301b69d57caada69fa1091c07a3da5ed"
+    },
+    "site_libs/bootstrap-3.3.5/css/lumen.min.css": {
+      "checksum": "cc8777d594a028bcd9d2b5181f445a2f"
+    },
+    "site_libs/bootstrap-3.3.5/css/paper.min.css": {
+      "checksum": "82ed16ec394450ee8165044db775d810"
+    },
+    "site_libs/bootstrap-3.3.5/css/readable.min.css": {
+      "checksum": "5a3dd680e4bc9fecfbe73b6fb6053df2"
+    },
+    "site_libs/bootstrap-3.3.5/css/sandstone.min.css": {
+      "checksum": "bd322f2bb56fd796f9b25a4d8143e32a"
+    },
+    "site_libs/bootstrap-3.3.5/css/simplex.min.css": {
+      "checksum": "4e852706d1a055001b1b261bb278f1c3"
+    },
+    "site_libs/bootstrap-3.3.5/css/spacelab.min.css": {
+      "checksum": "fdc6659ea67a4f2eb3c2ea705fa7638e"
+    },
+    "site_libs/bootstrap-3.3.5/css/united.min.css": {
+      "checksum": "5481733846a5b753f5968693089b4130"
+    },
+    "site_libs/bootstrap-3.3.5/css/yeti.min.css": {
+      "checksum": "1f4bfa38bc583e334ba1a749fd6e0d23"
+    },
+    "site_libs/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot": {
+      "checksum": "f4769f9bdb7466be65088239c12046d1"
+    },
+    "site_libs/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.svg": {
+      "checksum": "89889688147bd7575d6327160d64e760"
+    },
+    "site_libs/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.ttf": {
+      "checksum": "e18bbf611f2a2e43afc071aa2f4e1512"
+    },
+    "site_libs/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff": {
+      "checksum": "fa2772327f55d8198301fdb8bcfc8158"
+    },
+    "site_libs/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff2": {
+      "checksum": "448c34a56d699c29117adc64c43affeb"
+    },
+    "site_libs/bootstrap-3.3.5/js/bootstrap.js": {
+      "checksum": "8015042d0b4ac125867af5b096b175ce"
+    },
+    "site_libs/bootstrap-3.3.5/js/bootstrap.min.js": {
+      "checksum": "4becdc9104623e891fbb9d38bba01be4"
+    },
+    "site_libs/bootstrap-3.3.5/js/npm.js": {
+      "checksum": "ccb7f3909e30b1eb8f65a24393c6e12b"
+    },
+    "site_libs/bootstrap-3.3.5/shim/html5shiv.min.js": {
+      "checksum": "ae8fceae0e07d55b5cfaa9af6bc43a6d"
+    },
+    "site_libs/bootstrap-3.3.5/shim/respond.min.js": {
+      "checksum": "506fe393e9f296d14b63733c0aff6205"
+    },
+    "site_libs/font-awesome-5.1.0/css/all.css": {
+      "checksum": "826c57385f3d35cfed5478ba7b1f5c03"
+    },
+    "site_libs/font-awesome-5.1.0/css/v4-shims.css": {
+      "checksum": "6dd334cc89ff203f10b026482960997d"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-brands-400.eot": {
+      "checksum": "e2a76403183eff8967cf6318c6e51509"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-brands-400.svg": {
+      "checksum": "a999c7b8823b901248833dc7fe07a52f"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-brands-400.ttf": {
+      "checksum": "e0fc4e5c719b4dc10c97fc111d7374e1"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-brands-400.woff": {
+      "checksum": "d034c1b2ee84dd981ef2e637754a0b4f"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-brands-400.woff2": {
+      "checksum": "f319eac1c755f9929fd856720ce1695e"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-regular-400.eot": {
+      "checksum": "5a4618f029618cc2795c05fe53d57028"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-regular-400.svg": {
+      "checksum": "e9d8dbb0c3e9b97ffc59c50ff5d01422"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-regular-400.ttf": {
+      "checksum": "6534c603e0892488132ad57248ec69e2"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-regular-400.woff": {
+      "checksum": "e99569d3d10c94c60d9a68523c1c0e71"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-regular-400.woff2": {
+      "checksum": "a3715c6fe264a51f1d9260b447ff46bc"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-solid-900.eot": {
+      "checksum": "d9824d00712532d7697df68df16ae0d3"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-solid-900.svg": {
+      "checksum": "666a82cb3e9f8591bef4049aea26c4c6"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-solid-900.ttf": {
+      "checksum": "00ddaede094b83270cadbfc1a907e8ca"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-solid-900.woff": {
+      "checksum": "128d2b0be23925e5cf36717ddc6f093b"
+    },
+    "site_libs/font-awesome-5.1.0/webfonts/fa-solid-900.woff2": {
+      "checksum": "18d2347ab2a9f40ca2247cdb03303d84"
+    },
+    "site_libs/highlightjs-9.12.0/default.css": {
+      "checksum": "6dbd2fae386badeb491287fa2393c988"
+    },
+    "site_libs/highlightjs-9.12.0/highlight.js": {
+      "checksum": "810ac820fbe3db99ed70600fc80e6f2f"
+    },
+    "site_libs/highlightjs-9.12.0/textmate.css": {
+      "checksum": "777aa1e5c865776dcc39c2edd9502661"
+    },
+    "site_libs/jquery-1.11.3/jquery.min.js": {
+      "checksum": "895323ed2f7258af4fae2c738c8aea49"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_444444_256x240.png": {
+      "checksum": "d80747d34afb87753b51d45a36f8bd17"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_555555_256x240.png": {
+      "checksum": "1e70a2d46244ee4070fd47152bd71db1"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_777620_256x240.png": {
+      "checksum": "eb4a975c630f379279fe78c604d0b36c"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_777777_256x240.png": {
+      "checksum": "68855e6e3d288ab126a1f1dd82b64e26"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_cc0000_256x240.png": {
+      "checksum": "7c81a6253b77a9fdaf51bb1038f8c840"
+    },
+    "site_libs/jqueryui-1.11.4/images/ui-icons_ffffff_256x240.png": {
+      "checksum": "41612b0f4a034424f8321c9f824a94da"
+    },
+    "site_libs/jqueryui-1.11.4/index.html": {
+      "checksum": "35c5b4c500d766e04a9b3a7b05701b2e"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.css": {
+      "checksum": "a14ebdbb782f62a97b0bfc1d0749e138"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.js": {
+      "checksum": "4156bf51d2d5144087fd8766e433a3d8"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.min.css": {
+      "checksum": "a0fd52784e4da798e7d6a4b52e991db1"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.min.js": {
+      "checksum": "991c88f48d11ebce6828a6b2be17dad2"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.structure.css": {
+      "checksum": "c762a2f34b42e912713542ebdc16ba4b"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.structure.min.css": {
+      "checksum": "c68383f6186ce6de68fdb44abdfdebce"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.theme.css": {
+      "checksum": "f05390e630b6c940d8d86c65596f62f5"
+    },
+    "site_libs/jqueryui-1.11.4/jquery-ui.theme.min.css": {
+      "checksum": "d3ea6df653da3d8ac16cc34452214d52"
+    },
+    "site_libs/jqueryui-1.11.4/README": {
+      "checksum": "209ed8e314e0e913f7d2eb5c9e5ec785"
+    },
+    "site_libs/navigation-1.1/codefolding.js": {
+      "checksum": "795f65a1c60e18803e968d419877c6c8"
+    },
+    "site_libs/navigation-1.1/sourceembed.js": {
+      "checksum": "a1a9d728fbf33ed607aa465e6e8a42ba"
+    },
+    "site_libs/navigation-1.1/tabsets.js": {
+      "checksum": "3838523138b4d71acb5ea1c5c45ecc00"
+    },
+    "site_libs/tocify-1.9.1/jquery.tocify.css": {
+      "checksum": "caa7b102e2a6b7726284a62fd8f32143"
+    },
+    "site_libs/tocify-1.9.1/jquery.tocify.js": {
+      "checksum": "a07b7eec33de9d8cf31d7e4883e0e77d"
+    },
+    "tour.html": {
+      "checksum": "793b707391fbcfb58ee0fe7234083ef0"
+    }
+  },
+  "users": null
+}
